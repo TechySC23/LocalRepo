@@ -10,4 +10,4 @@ It's because I wanted to learn Git and Github!😄
 
 ## How did you create this?
 
-Well some tutorials😅
+Using some tutorials!😉
