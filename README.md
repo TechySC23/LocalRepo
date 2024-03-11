@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is a website created as a test purpose.
+This is a website created for test purposes.
 
 ## Why did you create this?
 
