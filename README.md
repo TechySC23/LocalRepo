@@ -1,4 +1,4 @@
-# This is my Local Repo
+# Local Repo
 
 ## What is this?
 
@@ -18,6 +18,7 @@ Using some tutorials!😉
 -[x] Medium Github knowledge done.
 -[x] HTML and CSS done.
 -[x] Dark Theme added.
--[] Progress tracker
+-[x] Progress tracker
+-[x] Add Testing area.
 -[] Javascript done
 -[] More...
