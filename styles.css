@@ -1,11 +1,43 @@
+* {
+	background-color: #242424;
+}
+
 h1 {
-	color: #0039c0;
+	color: #349dff;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
+	color: #c7e5ff;
 	font-family: "Arial", Helvetica, sans-serif;
 }
 p {
+	color: #c7e5ff;
 	font-family: "Segoe UI Variable", Verdana, sans-serif;
+	display: inline-flex;
+}
+
+.f1 {
+	color: #c7e5ff;
+	border-color: aliceblue;
+	border-radius: 20%;
+	border-width: 2.5px;
+	font-family: "Segoe UI Variable", Tahoma, sans-serif;
+	display: inline-flex;
+	justify-content: flex-end;
+	margin-left: 5px;
+}
+
+.warn {
+	color: firebrick;
+	font-weight: 900;
+}
+
+.test {
+	display: inline-flex;
+	font-weight: 700;
+}
+
+.img {
+	margin: 100;
 }
