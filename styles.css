@@ -4,7 +4,7 @@
 
 h1 {
 	color: #349dff;
-	font-family: 'Arial', Helvetica, sans-serif;
+	font-family: "Arial", Helvetica, sans-serif;
 }
 
 h2 {
@@ -34,8 +34,25 @@ p {
 }
 
 .test {
-	display: inline-flex;
+	display: inline-block;
+	justify-content:flex-end;
 	font-weight: 700;
 }
 
-
+/*TODO: Fix the image */
+img {
+	width: 50px;
+	height: 50px;
+	display: inline;
+	justify-content:end;
+	align-items: end;
+	margin-bottom: 5px;
+	border-radius: 20%;
+	border-width: 2px;
+	border-style:double solid;
+	border-color: #ef5543;
+	vertical-align: middle;
+	padding: 5px;
+	box-sizing:border-box;
+	cursor: not-allowed;
+}

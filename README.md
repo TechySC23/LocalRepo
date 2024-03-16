@@ -27,5 +27,5 @@ Using some tutorials!😉
 -[x] Dark Theme added.
 -[x] Progress tracker
 -[x] Add Testing area.
--[ ] Javascript done
--[ ] More...
+-[] Javascript done
+-[] More...
