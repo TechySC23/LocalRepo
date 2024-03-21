@@ -21,11 +21,11 @@ Using some tutorials!😉
 
 ## Current Progress
 
--[x] Basic Git knowledge done.
--[x] Medium GitHub knowledge done.
--[x] HTML and CSS done.
--[x] Dark Theme added.
--[x] Progress tracker
--[x] Add Testing area.
--[] Javascript done
--[] More...
+- [x] Basic Git knowledge done.
+- [x] Medium GitHub knowledge done.
+- [x] HTML and CSS done.
+- [x] Dark Theme added.
+- [x] Progress tracker
+- [x] Add Testing area.
+- [ ] Javascript done
+- [ ] More...
