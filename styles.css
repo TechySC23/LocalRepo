@@ -1,10 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Main Functional part start: */
 
 * {
+	box-sizing: border-box;
 	background-color: #242424;
 }
 
@@ -30,41 +27,46 @@ ul {
 	padding: 0;
 	list-style-type: none;
 	overflow: hidden;
-	float: inline;
-	/* background-color: #464646; */
-
+	background-color: #464646;
+	font-size: 0; /*? Removes the default spacing (i.e. Whitespace) between list items ?*/
 }
 
+li {
+	justify-items: flex-end;
+	display: inline-block;
+	padding: 10px 0;
+}
 
 li a {
 	text-decoration: none;
-	display: block;
 	text-align: center;
 	padding: 10px 25px;
 	color: aliceblue;
 	background-color: #464646;
-	border-left: 1px solid aliceblue;
+	border-right: 1px solid aliceblue;
+	font-size: 1rem;
 }
 
 li:last-child a {
-	border-left: none; 
+	border-right: none;
 }
 
 li a:hover {
-  background-color: #349dff;
+	background-color: #349dff;
 }
 
 
 /** Progress Bar CSS Start **/
 progress {
 	appearance: none;
+	padding: 2px;
 }
 
 /* * ::-webkit-~~~ are for the Chromium/Safari browsers. * */
 
 ::-webkit-progress-inner-element {
 	border: 2px transparent #00aeff;
-	border-radius: 5px;
+	color: #242424;
 }
 
 ::-webkit-progress-bar {
