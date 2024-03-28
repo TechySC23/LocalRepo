@@ -28,8 +28,21 @@ ul {
 	list-style-type: none;
 	overflow: hidden;
 	background-color: #464646;
-	font-size: 0; /*? Removes the default spacing (i.e. Whitespace) between list items ?*/
+	font-size: 0;
+	/*? ^^^Removes the default spacing (i.e. Whitespace) between list items ?*/
 }
+
+footer {
+	position: fixed;
+	color: #ebebeb;
+	font-family: 'Segoe UI Variable', sans-serif;
+	text-align: center;
+	width: 100%;
+	bottom: 10px;
+	font-size: 0.86rem;
+}
+
+/** Really Complex Navbar code: **/
 
 li {
 	justify-items: flex-end;
@@ -40,7 +53,7 @@ li {
 li a {
 	text-decoration: none;
 	text-align: center;
-	padding: 10px 25px;
+	padding: 10px 14px;
 	color: aliceblue;
 	background-color: #464646;
 	border-right: 1px solid aliceblue;
@@ -55,6 +68,7 @@ li a:hover {
 	background-color: #349dff;
 }
 
+/* Navbar code end. */
 
 /** Progress Bar CSS Start **/
 progress {
