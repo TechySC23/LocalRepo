@@ -1,0 +1,22 @@
+/* font-weight: Use a value from 100 to 900 */
+/* font-variation-settings: Use a value from 62.5 to 100 */
+
+.noto {
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	/* This is required to enable font variation */
+	font-weight: 456;
+	font-style: normal;
+	/* This is required to enable italic style */
+	font-variation-settings: "wdth" 100;
+	/* This is the width of the font */
+}
+
+.code {
+	background-color: rgb(0, 0, 0);
+	color: aliceblue;
+	padding: 3.76px 10px;
+	border-radius: 7.254px;
+	font-size: 18.24px;
+	font-family: "Consolas", monospace;
+}
