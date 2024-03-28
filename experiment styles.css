@@ -4,12 +4,12 @@
 .noto {
 	font-family: "Noto Sans", sans-serif;
 	font-optical-sizing: auto;
-	/* This is required to enable font variation */
+	/* ^This is required to enable font variation */
 	font-weight: 456;
 	font-style: normal;
-	/* This is required to enable italic style */
+	/* ^This is required to enable italic style */
 	font-variation-settings: "wdth" 100;
-	/* This is the width of the font */
+	/* ^This is the width of the font */
 }
 
 .code {
@@ -20,3 +20,31 @@
 	font-size: 18.24px;
 	font-family: "Consolas", monospace;
 }
+
+/** Really Complex Navbar code: **/
+
+li {
+	justify-items: flex-end;
+	display: inline-block;
+	padding: 10px 0;
+}
+
+li a {
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 14px;
+	color: aliceblue;
+	background-color: #464646;
+	border-right: 1px solid aliceblue;
+	font-size: 1rem;
+}
+
+li:last-child a {
+	border-right: none;
+}
+
+li a:hover {
+	background-color: #349dff;
+}
+
+/* Navbar code end. */
