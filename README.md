@@ -21,12 +21,39 @@ Using some tutorials!😉
 
 ## Current Progress
 
-- [x] Basic Git knowledge done.
-- [x] Medium GitHub knowledge done.
-- [x] HTML and CSS done.
-- [x] Dark Theme added.
-- [x] Progress tracker
+- [x] Learn basic Git commands
+- [x] Learn GitHub.
+- [x] Create basic structure of the website.
+- [x] Add dark theme.
 - [x] Add Testing area.
-- [ ] Learn Markdown.
-- [ ] Javascript done
-- [ ] More...
+- [ ] Learn JavaScript.
+- [ ] Implement JavaScript.
+- [ ] Complete RWD (Responsive Website Design).
+- [ ] Add more features.
+
+Need more precise progress? Check out my project!
+
+## Experiments for Markdown
+
+### Normal, Note, Important, Warning Blockquotes
+
+> I'm a Blockquote!
+> Made by @TechySC23!
+*****
+> [!Note]
+> I'm a Note quote!
+> Made by @TechySC23
+*****
+> [!Important]
+> I'm a Important quote
+> Made by @TechySC23
+*****
+> [!Warning]
+> I'm a Warning quote
+> Made by @TechySC23
+*****
+
+### Text Styling
+
+**Very Important Text** _Very Important Text_
+~~Deprecated~~
