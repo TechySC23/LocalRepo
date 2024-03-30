@@ -65,6 +65,12 @@ progress {
 	border-radius: 10%;
 }
 
+/* * ::-moz~~~ are for the Firefox browser only. **/
+
+::-moz-progress-bar {
+	background-color: darkorange;
+}
+
 /* *Progress Bar CSS End* */
 
 /* Main Functional part end. */
