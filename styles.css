@@ -61,14 +61,14 @@ progress {
 }
 
 ::-webkit-progress-value {
-	background-color: darkorange;
+	background-color: #ff8c00;
 	border-radius: 10%;
 }
 
 /* * ::-moz~~~ are for the Firefox browser only. **/
 
 ::-moz-progress-bar {
-	background-color: darkorange;
+	background-color: #ff8c00;
 }
 
 /* *Progress Bar CSS End* */
@@ -79,29 +79,28 @@ progress {
 /* Classes Start: */
 .f1 {
 	color: #c7e5ff;
-	border-color: aliceblue;
-	border-width: 1.6423px;
+	border:#3e3d3dbb solid 1.6px 1;/*The Extra "1" is for making the cool styling. */
 	font-family: "Segoe UI Variable", Tahoma, sans-serif;
 	letter-spacing: 0.5px;
 	display: inline-flex;
 	justify-content: flex-end;
-	margin-left: 5px;
-	height: 27.4563;
 	text-align: center;
+	padding: 0.25rem 0.35rem;
+	margin-left: 10px;
 }
 
 .f1:hover {
-	background-color: #349dff;
-	color: aliceblue;
+	background-color: #178406;
+	color: #f0f8ff;
 }
 
 .f1:active {
-	background-color: rgb(16, 0, 75);
-	color: #b1b1b1;
+	background-color: #23ae3f;
+	border: #008504b6 solid 1.6px;
 }
 
 .warn {
-	color: firebrick;
+	color: #b22222;
 	font-weight: 900;
 }
 

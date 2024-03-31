@@ -39,21 +39,30 @@ Need more precise progress? Check out my project!
 
 > I'm a Blockquote!
 > Made by @TechySC23!
-*****
+---
 > [!Note]
 > I'm a Note quote!
 > Made by @TechySC23
-*****
+---
 > [!Important]
 > I'm a Important quote
 > Made by @TechySC23
-*****
+---
 > [!Warning]
 > I'm a Warning quote
 > Made by @TechySC23
-*****
+---
 
 ### Text Styling
 
 **Very Important Text** _Very Important Text_
 ~~Deprecated~~
+
+### Other styling Experiments
+
+<!-- markdownlint-disable-next-line MD022-->
+| Table Heading        |
+-------------------
+| What?           |
+| This is a Table?|
+| Unbelievable!   |
