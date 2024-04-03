@@ -163,14 +163,6 @@ progress {
 	border-style: outset;
 	border-width: 0.2rem;
 	border-color: #002142;
-	border-bottom-color: #002142;
-	border-right-color: #002142;
-}
-
-#popbtn:focus {
-	border-style: outset;
-	border-width: 0.2rem;
-	border-color: #002142;
-	border-bottom-color: #002142;
-	border-right-color: #002142;
+	border-bottom-color: #0080ff;
+	border-right-color: #0080ff;
 }
