@@ -7,6 +7,10 @@
 	font-family: system-ui, -apple-system, "Helvetica", sans-serif;
 }
 
+body {
+	background: linear-gradient(to right, #3a3a3a, #2a2a2a);
+}
+
 h1 {
 	color: #0060dd;
 	font-family: "Arial", Helvetica, sans-serif;
