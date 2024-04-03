@@ -6,6 +6,7 @@
 		<meta content="IE=edge" />
 		<title>LocalRepo Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <meta name="color-scheme" content="dark" /> -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 
@@ -14,9 +15,18 @@
 			<h1>My LocalRepo</h1>
 			<p>This is my LocalRepo and this is my practice workspace for Github (or Git).</p>
 		</header>
-		<h2>Feature 1</h2>
-		<p>This is our new feature, introducing</p>
-		<button type="submit" class="f1">Feature</button>
+		<section>
+			<h2>Feature 1</h2>
+			<p>This is our new feature, introducing</p>
+			<button type="submit" class="f1">Feature</button>
+		</section>
+		<!-- Popover code Section: -->
+		<section>
+			<h3>Feature 2</h3>
+			<p>Click the button to see the surprise!</p>
+			<button type="button" id="popbtn" popovertarget="popup">Secret Button</button>
+			<div id="popup" anchor="popbtn" popover="manual">Hello I'm a Popup</div>
+		</section>
 		<footer class="footer">
 			Open Source Website 2024. Made by @TechySC with Github, Git, and VS Code!
 		</footer>

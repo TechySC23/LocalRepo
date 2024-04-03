@@ -2,11 +2,17 @@
 
 * {
 	box-sizing: border-box;
-	background-color: #242424;
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, "Helvetica", sans-serif;
+}
+
+body {
+	background: linear-gradient(to right, #3a3a3a, #2a2a2a);
 }
 
 h1 {
-	color: #349dff;
+	color: #0060dd;
 	font-family: "Arial", Helvetica, sans-serif;
 }
 
@@ -15,31 +21,28 @@ h2 {
 	font-family: "Arial", Helvetica, sans-serif;
 }
 
-p {
+h3 {
 	color: #c7e5ff;
-	font-family: "Segoe UI Variable", Verdana, sans-serif;
-	display: inline-flex;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 2rem;
 }
 
-ul {
-	font-family: 'Segoe UI Variable', Verdana, sans-serif;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #464646;
-	font-size: 0;
-	/*? ^^^Removes the default spacing (i.e. Whitespace) between list items ?*/
+p {
+	color: #c7e5ff;
+	font-family: system-ui, "Verdana", sans-serif;
+	display: inline-flex;
+	font-size: 1rem;
 }
+
 
 footer {
 	position: fixed;
 	color: #ebebeb;
-	font-family: 'Segoe UI Variable', sans-serif;
+	font-family: system-ui, 'Helvetica', sans-serif;
 	text-align: center;
 	width: 100%;
 	bottom: 10px;
-	font-size: 0.86rem;
+	font-size: 1rem;
 }
 
 
@@ -79,7 +82,9 @@ progress {
 /* Classes Start: */
 .f1 {
 	color: #c7e5ff;
-	border:#3e3d3dbb solid 1.6px 1;/*The Extra "1" is for making the cool styling. */
+	background-color: #292727;
+	border: #585858 solid 1.6px;
+	border-radius: 0.45rem;
 	font-family: "Segoe UI Variable", Tahoma, sans-serif;
 	letter-spacing: 0.5px;
 	display: inline-flex;
@@ -112,10 +117,53 @@ progress {
 
 /* Classes End: */
 
-/* TODO: Fix the image */
-img {
-	width: 50px;
-	height: 50px;
+/** New Experimental Feature: Popovers*! Only Works on Chromium Browsers !*/
+
+[popover] {
+	inset: unset;
+	position: relative;
+	bottom: anchor(top);
+	left: anchor(center);
+	translate: -38.5%;
+	margin-bottom: 0.54rem;
+	padding: 0.40rem 0.68rem;
+	font-family: system-ui, -apple-system, 'Helvetica', Calibri, sans-serif;
+	color: #4bc6ff;
+	background-color: #464646;
+	text-shadow: #1d1d1d 0rem 0.15rem 0.05rem;
+	border: #0053d8 solid 0.2rem;
+	border-radius: 0.75rem;
 }
 
-/* Image Fix end. */
+#popbtn {
+	color: #349dff;
+	font-size: 0.94rem;
+	text-align: center;
+	padding: 0.2rem 0.5rem;
+	translate: 1rem;
+	background-color: #1d1d1d;
+	border: #2f2f2f 0.2rem solid;
+	border-radius: .6rem;
+}
+
+#popbtn:hover {
+	background-color: #002142;
+	color: #489ee9;
+	border: #3c4e60 solid 0.2rem;
+}
+
+#popbtn:active {
+	border-style: outset;
+	border-width: 0.2rem;
+	border-color: #002142;
+	border-bottom-color: #002142;
+	border-right-color: #002142;
+}
+
+#popbtn:focus {
+	border-style: outset;
+	border-width: 0.2rem;
+	border-color: #002142;
+	border-bottom-color: #002142;
+	border-right-color: #002142;
+}
