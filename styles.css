@@ -21,6 +21,12 @@ h2 {
 	font-family: "Arial", Helvetica, sans-serif;
 }
 
+h3 {
+	color: #c7e5ff;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
 p {
 	color: #c7e5ff;
 	font-family: system-ui, "Verdana", sans-serif;
