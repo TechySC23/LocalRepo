@@ -61,8 +61,8 @@ Need more precise progress? Check out my project!
 ### Other styling Experiments
 
 <!-- markdownlint-disable-next-line MD022-->
-| Table Heading        |
--------------------
+|  Table Heading  |
+| --------------- |
 | What?           |
 | This is a Table?|
 | Unbelievable!   |
