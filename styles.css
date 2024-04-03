@@ -8,12 +8,16 @@
 }
 
 body {
-	background: linear-gradient(to right, #3a3a3a, #2a2a2a);
+	background: linear-gradient(-45deg, #02011e, #002478);
+	height: 100vh;
 }
 
 h1 {
 	color: #0060dd;
-	font-family: "Arial", Helvetica, sans-serif;
+	font-weight: 700;
+	font-family: "Monserrat", Helvetica, Verdana, sans-serif;
+	margin: 1.05rem;
+	text-align: center;
 }
 
 h2 {
