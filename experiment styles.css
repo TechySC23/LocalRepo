@@ -1,5 +1,6 @@
 /* font-weight: Use a value from 100 to 900 */
 /* font-variation-settings: Use a value from 62.5 to 100 */
+/* Copyright: By Google */
 
 .noto {
 	font-family: "Noto Sans", sans-serif;
@@ -23,28 +24,43 @@
 
 /** Really Complex Navbar code: **/
 
-li {
-	justify-items: flex-end;
-	display: inline-block;
-	padding: 10px 0;
+/* For the whole area behind the li's and a's: */
+ul.nav {
+	background-color: #00155f;
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	padding: 0;
 }
 
-li a {
+/* For the areas behind the actual navbar but above the ul: */
+
+li.navtab {
+	justify-items: flex-end;
+	display: inline-flex;
+	padding: 10px 2px;
+}
+
+/* The actual navbar: */
+
+.navtab a {
 	text-decoration: none;
 	text-align: center;
 	padding: 10px 14px;
 	color: aliceblue;
 	background-color: #464646;
-	border-right: 1px solid aliceblue;
+	border: 1px solid aliceblue;
 	font-size: 1rem;
+	border-radius: 0.5em;
 }
 
 li:last-child a {
-	border-right: none;
+	margin-right: 0.5rem;
 }
 
 li a:hover {
 	background-color: #349dff;
+	border: none;
 }
 
 /* Navbar code end. */
