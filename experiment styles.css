@@ -49,7 +49,8 @@ li.navtab {
 	padding: 10px 14px;
 	color: aliceblue;
 	background-color: #464646;
-	border: 1px solid aliceblue;
+	outline: 1px solid aliceblue;
+	outline-offset: .5px;
 	font-size: 1rem;
 	border-radius: 0.5em;
 }
@@ -60,7 +61,6 @@ li:last-child a {
 
 li a:hover {
 	background-color: #349dff;
-	border: none;
 }
 
 /* Navbar code end. */
