@@ -64,3 +64,27 @@ li a:hover {
 }
 
 /* Navbar code end. */
+/* Fake Progress Bars! */
+
+#container {
+	display: inline-flex;
+	width: 50%;
+	overflow: hidden;
+	background-color: #a2a2a2;
+	border-radius: .45rem;
+	align-items: center;
+	margin-top: 1.23%;
+}
+
+.bar {
+	display: inline-block;
+	text-align: right;
+	padding: .45rem;
+	width: 10%;
+	color: #000000;
+}
+
+.p-bar {
+	width: 46%;
+	background-color: #349dff;
+}
