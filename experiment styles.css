@@ -1,3 +1,85 @@
+:root {
+	/** Primary colors **/
+	--clr-primary-100: #3b90ff;
+	--clr-primary-150: #1a7ce9;
+	--clr-primary-200: #0b5ecb;
+	--clr-primary-300: #084fab;
+	--clr-primary-400: #09377c;
+	--clr-primary-500: #082873;
+	--clr-primary-550: #052164;
+	--clr-primary-600: #041869;
+	--clr-primary-700: #030b40;
+	--clr-primary-800: #020a2d;
+	
+	/** Secondary Colors **/
+	--clr-secondary-100: #44fb69;
+	--clr-secondary-200: #30ff3e;
+	--clr-secondary-300: #1eff1e;
+	--clr-secondary-350: #04db04;
+	--clr-secondary-400: #07b707;
+	--clr-secondary-500: #00bc00;
+	--clr-secondary-600: #009900;
+	--clr-secondary-650: #007700;
+	--clr-secondary-700: #005500;
+	--clr-secondary-800: #003300;
+	
+	/** Neutral colors **/
+	--clr-neutral-100: #c7c7c7;
+	--clr-neutral-150: #b3b3b3;
+	--clr-neutral-200: #a1a1a1;
+	--clr-neutral-300: #808080;
+	--clr-neutral-400: #464646;
+	--clr-neutral-500: #292727;
+	--clr-neutral-550: #1a1a1a;
+	
+	/** Background and text colors **/
+	--bg-clr-light: #dfdfdf;
+	--bg-clr-dark: #464646;
+	--text-clr-light: aliceblue;
+	--text-clr-dark: #292727;
+	
+  /** Border/Outline colors **/
+	--bdr-clr-light: #a1a1a1;
+	--bdr-clr-dark: #464646;
+	
+	/** Sizes: **/
+	/* Font size (fs) */
+	--fs-h1: 2.65rem;
+	--fs-h2: 2rem;
+	--fs-nav: 1.25rem;
+	--fs-list: 1.3rem;
+	--fs-section: 1.8rem;
+	--fs-body: 1.5rem;
+	--fs-footer: 1.5rem;
+	
+	/* Font Weight (fw) */
+	--fw-text: 400;
+	--fw-imp: 650;
+	--fw-header: 800;
+	--fw-list: 500;
+	--fw-section: 700;
+	--fw-footer: 400;
+	
+	/* Margin (m) Padding (p) */
+	--m-min: 0.7rem;
+	--m-normal: 1rem;
+	--m-max: 3rem;
+	--m-box: 1.5rem;
+	--m-space: 2rem;
+	
+	--p-min: 0.25rem;
+	--p-normal: 1.3rem;
+	--p-max: 3rem;
+	--p-box: 1.7rem;
+	--p-space: 3rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* font-weight: Use a value from 100 to 900 */
 /* font-variation-settings: Use a value from 62.5 to 100 */
 /* Copyright: By Google */
@@ -29,24 +111,31 @@ ul.nav {
 	background-color: #00155f;
 	display: flex;
 	width: 100%;
-	justify-content: flex-end;
 	padding: 0;
 }
 
 /* For the areas behind the actual navbar but above the ul: */
 
 li.navtab {
-	justify-items: flex-end;
-	display: inline-flex;
+	align-self: center;
 	padding: 10px 2px;
+	list-style: none;
+}
+
+div.navtabs {
+	align-self: center;
+	height: 100%;
+	display: flex;
+	margin: 0px 10px;
 }
 
 /* The actual navbar: */
 
 .navtab a {
+	display: flex;
 	text-decoration: none;
 	text-align: center;
-	padding: 10px 14px;
+	padding: 10px 20px;
 	color: aliceblue;
 	background-color: #464646;
 	outline: 1px solid aliceblue;
@@ -61,6 +150,21 @@ li:last-child a {
 
 li a:hover {
 	background-color: #349dff;
+}
+
+.logo {
+	display: flex;
+	background-color: #0044ff;
+	height: 70px;
+	width: 250px;
+	justify-items: center;
+	align-items: center;
+}
+
+h1 {
+	color: aliceblue;
+	text-align: center;
+	margin: 0;
 }
 
 /* Navbar code end. */
