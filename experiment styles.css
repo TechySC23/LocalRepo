@@ -89,7 +89,7 @@
 	--clr-n-700: #1f1f1f;
 	--clr-n-800: #0a0a0a;
 	--clr-n-900: #000000;
-	
+
 	/** Transparency colors **/
 	--clr-t-0: #ffffff00;
 	--clr-t-50: #ffffff19;
@@ -205,11 +205,12 @@ li.navtab {
 	list-style: none;
 }
 
+/* !This below block of code just DOESN'T WORK! */
 div.navtabs {
-	align-self: center;
+	/* align-self: center; */
 	height: 100%;
-	display: flex;
-	margin: 0px 10px;
+	position: absolute;
+	/* display: flex; */
 }
 
 /* The actual navbar: */
