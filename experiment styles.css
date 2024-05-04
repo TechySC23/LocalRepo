@@ -89,6 +89,24 @@
 	--clr-n-700: #1f1f1f;
 	--clr-n-800: #0a0a0a;
 	--clr-n-900: #000000;
+	
+	/** Transparency colors **/
+	--clr-t-0: #ffffff00;
+	--clr-t-50: #ffffff19;
+	--clr-t-100: #ffffff1a;
+	--clr-t-150: #ffffff26;
+	--clr-t-200: #ffffff33;
+	--clr-t-250: #ffffff4c;
+	--clr-t-300: #ffffff4d;
+	--clr-t-350: #ffffff5f;
+	--clr-t-400: #ffffff66;
+	--clr-t-450: #ffffff7f;
+	--clr-t-500: #ffffff80;
+	--clr-t-550: #ffffff87;
+	--clr-t-600: #ffffff99;
+	--clr-t-700: #ffffffb3;
+	--clr-t-800: #ffffffcc;
+	--clr-t-900: #ffffffe6;
 
 	/** Background and text colors **/
 	--bg-clr-light: #dfdfdf;
