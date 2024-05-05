@@ -1,5 +1,10 @@
 # Full TODO List for LocalRepo
 
+> [!Note]
+> This isn't a replacement for the GitHub Project, which shows the latest updates.
+> This local roadmap is just a rough outline of planned milestones and features.
+> The GitHub Project board shows the actual progress and latest updates. The Project Board shows latest issues and PR's in progress.
+
 ## 1.0.0 - 5 June 2024
 
 - [ ] Fully Responsive Site.
@@ -26,3 +31,5 @@
 
 - [ ] Add More Themes.
 - [ ] Add languages like SCSS, Sass, Less, etc.
+- [ ] Add Processors like PostCSS for optimizing code.
+- [ ] Make the website more dynamic.
