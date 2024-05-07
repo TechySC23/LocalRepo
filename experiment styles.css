@@ -91,22 +91,22 @@
 	--clr-n-900: #000000;
 
 	/** Transparency colors **/
-	--clr-t-0: #ffffff00;
-	--clr-t-50: #ffffff19;
-	--clr-t-100: #ffffff1a;
-	--clr-t-150: #ffffff26;
-	--clr-t-200: #ffffff33;
-	--clr-t-250: #ffffff4c;
-	--clr-t-300: #ffffff4d;
-	--clr-t-350: #ffffff5f;
-	--clr-t-400: #ffffff66;
-	--clr-t-450: #ffffff7f;
-	--clr-t-500: #ffffff80;
-	--clr-t-550: #ffffff87;
-	--clr-t-600: #ffffff99;
-	--clr-t-700: #ffffffb3;
-	--clr-t-800: #ffffffcc;
-	--clr-t-900: #ffffffe6;
+	--clr-tr-0: #ffffff00;
+	--clr-tr-50: #ffffff19;
+	--clr-tr-100: #ffffff1a;
+	--clr-tr-150: #ffffff26;
+	--clr-tr-200: #ffffff33;
+	--clr-tr-250: #ffffff4c;
+	--clr-tr-300: #ffffff4d;
+	--clr-tr-350: #ffffff5f;
+	--clr-tr-400: #ffffff66;
+	--clr-tr-450: #ffffff7f;
+	--clr-tr-500: #ffffff80;
+	--clr-tr-550: #ffffff87;
+	--clr-tr-600: #ffffff99;
+	--clr-tr-700: #ffffffb3;
+	--clr-tr-800: #ffffffcc;
+	--clr-tr-900: #ffffffe6;
 
 	/** Background and text colors **/
 	--bg-clr-light: #dfdfdf;
@@ -124,17 +124,18 @@
 	/* Font size (fs) */
 	--fs-h1: 2.65rem;
 	--fs-h2: 2rem;
+	--fs-h3: 1.5rem;
 	--fs-nav: 1.05rem;
 	--fs-list: 1.3rem;
 	--fs-section: 1.8rem;
-	--fs-body: 1.5rem;
+	--fs-body: 1.25rem;
 	--fs-footer: 1.5rem;
 
 	/* Font Weight (fw) */
-	--fw-text: 400;
+	--fw-text: 450;
 	--fw-imp: 650;
-	--fw-header: 800;
-	--fw-list: 500;
+	--fw-head: 750;
+	--fw-list: 550;
 	--fw-section: 700;
 	--fw-footer: 550;
 
@@ -191,7 +192,7 @@
 
 /* For the whole area behind the li's and a's: */
 ul.nav {
-	background-color: var(--clr-p-500);
+	/* background-color: var(--clr-s-500); */
 	display: flex;
 	width: 100%;
 	padding: 0;
@@ -226,7 +227,7 @@ ul.nav {
 	/* width: 100%; */
 	padding: 10px 20px;
 	justify-content: space-evenly;
-	outline: 1px solid var(--bdr-clr-light);
+	/* outline: 1px solid var(--bdr-clr-light); */
 }
 
 /* * This still doesn't work */
@@ -235,7 +236,7 @@ ul.nav {
 
 /* !This below block of code just DOESN'T WORK! */
 div.navtabs {
-	background-color: var(--clr-a-100);
+	background-color: var(--clr-n-250);
 	display: flex;
 	/* align-self: flex-end; This works?? */
 }
@@ -262,7 +263,8 @@ li:last-child a {
 }
 
 li a:hover {
-	background-color: var(--clr-hover-100);
+	background-color: var(--clr-s-650);
+	color: var(--txt-clr-light);
 }
 
 .logo {
@@ -299,10 +301,46 @@ h1 {
 	text-align: right;
 	padding: var(--p-width) var(--p-height);
 	width: 10%;
-	color: var(--txt-clr-light);
 }
 
 .p-bar {
 	width: 46%;
-	background-color: var(--clr-a-100);
+	background-color: var(--clr-t-100);
+	color: var(--clr-n-800);
+}
+
+/* Page Styling here:  */
+
+.experiment-header {
+	margin: var(--m-box);
+	padding: var(--p-min);
+	font-size: var(--fs-h2);
+	font-weight: var(--fw-head);
+}
+
+.description {
+	margin-inline: var(--m-min);
+	padding: var(--p-min) var(--p-width);
+	font-size: var(--fs-body);
+	font-weight: var(--fw-text);
+	line-height: 1.3;
+	text-align: justify;
+	text-justify: distribute-all-lines;
+	word-wrap: break-word;
+	hyphens: auto;
+	overflow-wrap: break-word;
+}
+
+.experiments {
+	margin: var(--m-min);
+	padding: var(--p-min);
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-text);
+}
+
+ol {
+	margin: var(--m-width);
+	padding: var(--p-min) var(--p-space);
+	font-size: var(--fs-list);
+	font-weight: var(--fw-list);
 }
