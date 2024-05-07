@@ -199,19 +199,48 @@ ul.nav {
 
 /* For the areas behind the actual navbar but above the ul: */
 
-li.navtab {
+/* li.navtab {
 	align-self: center;
-	padding: 10px 2px;
+	padding: var(--p-min);
 	list-style: none;
+	margin-inline: var(--m-space) var(--m-min);
+	display: flex;
+	justify-items: center;
+	align-content: center;
+	width: 100%;
+	padding: 10px 20px;
+	justify-content: space-evenly;
+	outline: 1px solid var(--bdr-clr-light);
+} */
+
+/** Hmm What about selecting ONLY .navtab? */
+
+.navtab {
+	align-self: center;
+	/* padding: var(--p-min); */
+	list-style: none;
+	margin-inline: var(--m-space) var(--m-min);
+	display: flex;
+	/* justify-items: center; */
+	align-content: center;
+	/* width: 100%; */
+	padding: 10px 20px;
+	justify-content: space-evenly;
+	outline: 1px solid var(--bdr-clr-light);
 }
+
+/* * This still doesn't work */
+
+/* ? Playing with specificity up there^ */
 
 /* !This below block of code just DOESN'T WORK! */
 div.navtabs {
-	/* align-self: center; */
-	height: 100%;
-	position: absolute;
-	/* display: flex; */
+	background-color: var(--clr-a-100);
+	display: flex;
+	/* align-self: flex-end; This works?? */
 }
+
+/* TODO: Fix the NAVBAR!  */
 
 /* The actual navbar: */
 
@@ -240,7 +269,7 @@ li a:hover {
 	display: flex;
 	background-color: var(--clr-p-300);
 	padding: .2rem var(--p-min);
-	justify-items: center;
+	justify-content: center;
 	align-items: center;
 }
 
