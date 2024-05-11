@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="experiment styles.css" />
-		<!-- Import the Noto Sans font -->
+		<!-- Import the Noto Sans font-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
@@ -19,27 +19,43 @@
 	</head>
 
 	<body class="noto">
-		<h1>Experiments Page</h1>
-		<p></p>
-		<h2>
-			<p>This is my list of experiments and tests:
-			<ol>
-				<li>Code Block customisation:
-					<code class="code">Code Block</code>
-				</li>
-				<li></li>
-				<li></li>
-			</ol>
-			</p>
-		</h2>
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="Experiments.html">Experiments and Tests</a></li>
-				<li><a href="lab.html">Test Lab</a></li>
-				<li><a href="#">About</a></li>
+			<ul class="nav">
+				<div class="logo">
+					<h1>Experiments Page</h1>
+				</div>
+				<div class="navtabs">
+					<li class="navtab">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="navtab">
+						<a href="Experiments.html">Experiments and Tests</a>
+					</li>
+					<li class="navtab">
+						<a href="lab.html">Test Lab</a>
+					</li>
+					<li class="navtab">
+						<a href="#">About</a>
+					</li>
+				</div>
 			</ul>
 		</nav>
+		<p></p>
+		<h2 class="noto experiment-header">Experiments and Tests</h2>
+		<p class="description">This page is dedicated to my various experiments which are things that (may) have been already implemented in other projects and real world sites. But, I go and test them in this page.</p>
+		<h3 class="experiments">This is my list of experiments and tests:
+		<ol>
+			<li>Code Block customisation:
+				<code class="code">Code Block</code>
+			</li>
+			<li> Progress Bars (But not real ones!):
+				<div id="container">
+					<div class="bar p-bar">46%</div>
+				</div>
+			</li>
+			<li>Navbar at the top ^</li>
+		</ol>
+		</h3>
 	</body>
 
 </html>
