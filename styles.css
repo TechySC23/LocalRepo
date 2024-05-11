@@ -129,7 +129,7 @@
 	--fs-list: 1.3rem;
 	--fs-section: 1.8rem;
 	--fs-body: 1.25rem;
-	--fs-footer: 1.5rem;
+	--fs-footer: 1.2rem;
 
 	/* Font Weight (fw) */
 	--fw-text: 450;
@@ -174,94 +174,62 @@ html {
 
 body {
 	background: linear-gradient(-45deg, #02011e, #002478);
-	
 }
 
 h1 {
-	color: #0060dd;
-	font-weight: 700;
+	color: var(--clr-a-100);
+	font-weight: var(--fw-head);
 	font-family: "Monserrat", Helvetica, Verdana, sans-serif;
 	margin: var(--m-space);
 	text-align: center;
 }
 
 h2 {
-	color: #c7e5ff;
+	color: var(--clr-n-100);
 	font-family: "Arial", Helvetica, sans-serif;
-	margin: 1rem .6rem;
+	margin: var(--m-box) var(--m-width);
 }
 
 h3 {
-	color: #c7e5ff;
+	color: var(--clr-n-100);
 	font-family: "Arial", Helvetica, sans-serif;
-	margin: 1rem .6rem;
+	margin: var(--m-box) var(--m-width);
 }
 
 p {
-	color: #c7e5ff;
+	color: var(--clr-n-100);
 	font-family: system-ui, "Verdana", sans-serif;
 	display: inline-flex;
-	margin: 1rem .8rem;
+	margin: var(--m-box) var(--m-normal);
 	margin-right: 0;
 }
 
 
 footer {
 	position: fixed;
-	color: #ebebeb;
+	color: var(--txt-clr-light);
 	font-family: system-ui, 'Helvetica', sans-serif;
 	text-align: center;
 	width: 100%;
 	bottom: 10px;
-	font-size: 1rem;
+	font-size: var(--fs-footer);
 }
-
-
-/** Progress Bar CSS Start **/
-progress {
-	appearance: none;
-	padding: 2px;
-}
-
-/* * ::-webkit-~~~ are for the Chromium/Safari browsers. * */
-
-::-webkit-progress-inner-element {
-	border: 2px transparent #00aeff;
-	color: #242424;
-}
-
-::-webkit-progress-bar {
-	background-color: #ffffffa8;
-}
-
-::-webkit-progress-value {
-	background-color: #ff8c00;
-	border-radius: 10%;
-}
-
-/* * ::-moz~~~ are for the Firefox browser only. **/
-
-::-moz-progress-bar {
-	background-color: #ff8c00;
-}
-
-/* *Progress Bar CSS End* */
 
 /* Main Functional part end. */
 
 
 /* Classes Start: */
 .f1 {
-	color: #c7e5ff;
-	background-color: #292727;
-	border: #585858 solid 1.6px;
+	color: var(--clr-s-400);
+	background-color: var(--clr-n-600);
+	outline: #585858 solid 1.6px;
 	border-radius: 0.45rem;
 	font-family: "Segoe UI Variable", Tahoma, sans-serif;
 	letter-spacing: 0.5px;
 	display: inline-flex;
 	justify-content: flex-end;
 	text-align: center;
-	padding: 0.25rem 0.35rem;
+	padding: var(--p-min) var(--p-width);
 	margin-left: 10px;
 }
 
@@ -272,19 +240,9 @@ progress {
 
 .f1:active {
 	background-color: #23ae3f;
-	border: #008504b6 solid 1.6px;
+	outline: #008504b6 solid 1.6px;
 }
 
-.warn {
-	color: #b22222;
-	font-weight: 900;
-}
-
-.test {
-	display: inline-block;
-	justify-content: flex-end;
-	font-weight: 700;
-}
 
 /* Classes End: */
 
