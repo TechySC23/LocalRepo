@@ -411,20 +411,18 @@ footer {
    ========================================================================== */
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--clr-n-700);
-	padding: 1rem var(--p-normal);
-	border-bottom: 2px solid var(--clr-a-300);
-	position: fixed;
-	/* Changed from sticky to fixed */
-	top: 0;
-	left: 0;
-	right: 0;
-	/* width: 100%; */
-	z-index: 100;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* This creates space between elements */
+    align-items: center;
+    background-color: var(--clr-n-700);
+    padding: 1rem var(--p-normal);
+    border-bottom: 2px solid var(--clr-a-300);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Add padding to the body to prevent content from being hidden under the navbar */
@@ -434,8 +432,9 @@ body {
 }
 
 .navbar-brand {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent logo from shrinking */
 }
 
 .navbar-logo {
@@ -448,10 +447,12 @@ body {
 }
 
 .navbar-nav {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Push nav items to the right */
+    margin-right: 1rem; /* Add space between nav and search */
 }
 
 .nav-item {
@@ -494,25 +495,30 @@ body {
 
 /* Media query for responsive navbar */
 @media (max-width: 768px) {
-	.navbar-toggle {
+    .navbar {
+        justify-content: space-between; /* Ensure space between on mobile */
+    }
+    
+    .navbar-toggle {
 		display: block;
 	}
 
-	.navbar-nav {
-		position: fixed;
-		top: 70px;
-		/* Adjust based on your navbar height */
-		left: 0;
-		right: 0;
-		background-color: var(--clr-n-700);
-		flex-direction: column;
-		align-items: center;
-		padding: 1rem 0;
-		transform: translateY(-100%);
-		transition: transform 0.3s ease;
-		z-index: 99;
-		border-bottom: 2px solid var(--clr-a-300);
-	}
+    .navbar-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--clr-n-700);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        z-index: 99;
+        border-bottom: 2px solid var(--clr-a-300);
+        margin-left: 0; /* Reset margin on mobile */
+        margin-right: 0; /* Reset margin on mobile */
+    }
 
 	.navbar-toggle-checkbox:checked~.navbar-nav {
 		transform: translateY(0);
@@ -521,104 +527,86 @@ body {
 	.nav-item {
 		margin: 0.5rem 0;
 	}
+    
+    .navbar-search {
+        margin-right: 50px; /* Make room for hamburger menu */
+    }
 }
 
 
 /* ==========================================================================
-    Search Bar Styling
+    Navbar Search Bar Styling
    ========================================================================== */
 
-.search-container {
-    max-width: 600px;
-    margin: var(--m-space) auto;
-    padding: var(--p-normal);
-}
-
-.search-form {
+.navbar-search {
     display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent search from shrinking */
     position: relative;
-    border-radius: var(--br-normal);
-    background-color: var(--clr-n-700);
-    border: 2px solid var(--clr-a-300);
+    border-radius: var(--br-min);
+    background-color: var(--clr-n-600);
+    border: 1px solid var(--clr-n-500);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    max-width: 250px;
 }
 
-.search-form:focus-within {
+.navbar-search:focus-within {
     border-color: var(--clr-a-100);
-    box-shadow: 0 0 0 3px rgba(59, 144, 255, 0.3);
+    background-color: var(--clr-n-700);
 }
 
-.search-input {
-    flex: 1;
-    padding: 0.8rem 1rem;
+.navbar-search-input {
+    padding: 0.4rem 0.6rem;
     border: none;
     background-color: transparent;
     color: var(--clr-n-100);
-    font-size: var(--fs-body);
+    font-size: var(--fs-small);
     outline: none;
     width: 100%;
 }
 
-.search-input::placeholder {
+.navbar-search-input::placeholder {
     color: var(--clr-n-300);
 }
 
-.search-button {
-    background-color: var(--clr-a-250);
+.navbar-search-button {
+    background-color: transparent;
     border: none;
-    color: var(--clr-n-50);
-    padding: 0.8rem 1.2rem;
+    color: var(--clr-n-100);
+    padding: 0.4rem 0.6rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.search-button:hover {
-    background-color: var(--clr-a-200);
+.navbar-search-button:hover {
+    color: var(--clr-a-100);
 }
 
 .search-icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.search-results {
-    margin-top: var(--m-normal);
-    background-color: var(--clr-n-700);
-    border-radius: var(--br-normal);
-    border: 1px solid var(--clr-n-500);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.search-results.active {
-    max-height: 300px;
-    overflow-y: auto;
-    padding: var(--p-normal);
-}
-
-.search-result-item {
-    padding: 0.8rem;
-    border-bottom: 1px solid var(--clr-n-600);
-    cursor: pointer;
-}
-
-.search-result-item:hover {
-    background-color: var(--clr-hover-800);
-}
-
-.search-result-item:last-child {
-    border-bottom: none;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .search-container {
-        padding: var(--p-min);
+/* For very small screens, hide search until clicked */
+@media (max-width: 480px) {
+    .navbar-search {
+        max-width: 40px;
+        overflow: hidden;
+        transition: max-width 0.3s ease;
     }
     
-    .search-input {
-        font-size: var(--fs-medium);
+    .navbar-search:focus-within {
+        max-width: 150px;
+    }
+    
+    .navbar-search-input {
+        width: 0;
+        padding: 0.4rem 0;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+    
+    .navbar-search:focus-within .navbar-search-input {
+        width: 100px;
+        padding: 0.4rem 0.6rem;
     }
 }
