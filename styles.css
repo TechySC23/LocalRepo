@@ -217,6 +217,9 @@ body {
 	border: 1px solid rgba(255, 255, 255, 0.1); */
 /* } */
 
+
+/*! CONTAINER WORK IN PROGRESS!! */
+
 /* ==========================================================================
 Main Functionality and Styling
 ========================================================================== */
@@ -518,4 +521,104 @@ body {
 	.nav-item {
 		margin: 0.5rem 0;
 	}
+}
+
+
+/* ==========================================================================
+    Search Bar Styling
+   ========================================================================== */
+
+.search-container {
+    max-width: 600px;
+    margin: var(--m-space) auto;
+    padding: var(--p-normal);
+}
+
+.search-form {
+    display: flex;
+    position: relative;
+    border-radius: var(--br-normal);
+    background-color: var(--clr-n-700);
+    border: 2px solid var(--clr-a-300);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-form:focus-within {
+    border-color: var(--clr-a-100);
+    box-shadow: 0 0 0 3px rgba(59, 144, 255, 0.3);
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: transparent;
+    color: var(--clr-n-100);
+    font-size: var(--fs-body);
+    outline: none;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: var(--clr-n-300);
+}
+
+.search-button {
+    background-color: var(--clr-a-250);
+    border: none;
+    color: var(--clr-n-50);
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: var(--clr-a-200);
+}
+
+.search-icon {
+    font-size: 1.2rem;
+}
+
+.search-results {
+    margin-top: var(--m-normal);
+    background-color: var(--clr-n-700);
+    border-radius: var(--br-normal);
+    border: 1px solid var(--clr-n-500);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.search-results.active {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: var(--p-normal);
+}
+
+.search-result-item {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--clr-n-600);
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background-color: var(--clr-hover-800);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-container {
+        padding: var(--p-min);
+    }
+    
+    .search-input {
+        font-size: var(--fs-medium);
+    }
 }

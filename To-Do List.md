@@ -12,7 +12,6 @@
 - [x] Add About Page.
 - [x] Add JS.
 - [ ] Add a Search Bar.
-- [ ] Add FAQ Page.
 
 ## 1.5.0
 
