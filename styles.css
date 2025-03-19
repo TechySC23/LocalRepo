@@ -1,164 +1,143 @@
+/* ==========================================================================
+CSS root variables
+========================================================================== */
+
 :root {
-	/** Primary colors **/
+	/* Color Palettes */
+	/* Primary (blues) */
 	--clr-p-100: #3b90ff;
-	--clr-p-150: #1a7ce9;
 	--clr-p-200: #0b5ecb;
-	--clr-p-300: #084fab;
 	--clr-p-400: #09377c;
 	--clr-p-500: #082873;
-	--clr-p-550: #052164;
 	--clr-p-600: #041869;
 	--clr-p-700: #030b40;
 	--clr-p-800: #020a2d;
 
-	/** Accent Colors **/
+	/* Accent (deeper blues) */
 	--clr-a-100: #0081e4;
 	--clr-a-200: #0066c5;
 	--clr-a-250: #0053a6;
 	--clr-a-300: #0049a6;
-	--clr-a-350: #00429e;
-	--clr-a-375: #003f9e;
 	--clr-a-400: #00318e;
-	--clr-a-450: #002a7e;
 	--clr-a-500: #001f76;
-	--clr-a-550: #001a6e;
 	--clr-a-600: #00116b;
-	--clr-a-650: #000f67;
 	--clr-a-700: #000c63;
-	--clr-a-800: #000a5f;
 
-	/** Secondary Colors **/
-	--clr-s-100: #44fb69;
+	/* Secondary (greens) */
 	--clr-s-200: #30ff3e;
-	--clr-s-300: #1eff1e;
-	--clr-s-350: #04db04;
-	--clr-s-375: #03b703;
+	--clr-s-300: #0be70b;
 	--clr-s-400: #07b707;
-	--clr-s-450: #05a905;
 	--clr-s-500: #00bc00;
 	--clr-s-600: #009900;
-	--clr-s-650: #007700;
 	--clr-s-700: #006600;
-	--clr-s-750: #004c00;
 	--clr-s-800: #003300;
 
-	/** Tertiary Colors **/
+	/* Tertiary (oranges/reds) */
 	--clr-t-100: #f1a518;
-	--clr-t-200: #f09a17;
 	--clr-t-300: #f08e16;
-	--clr-t-350: #f07c15;
 	--clr-t-400: #f06a14;
 	--clr-t-500: #f05813;
-	--clr-t-600: #f04612;
-	--clr-t-650: #f03511;
 	--clr-t-700: #f02310;
 	--clr-t-800: #f0110f;
 
-	/** Hover Colors **/
+	/* Yellows (4th pallete) */
+	--clr-Y-100: #fff9c4;
+	--clr-Y-200: #fff176;
+	--clr-Y-300: #ffeb3b;
+	--clr-Y-400: #fbc02d;
+	--clr-Y-500: #f57f17;
+	--clr-Y-600: #ff6f00;
+	--clr-Y-700: #e65100;
+	--clr-Y-900: #8d2401;
+
+	/* Hover states */
 	--clr-hover-100: #0c78e4be;
-	--clr-hover-150: #0e63d4bd;
 	--clr-hover-200: #0b54b3bc;
-	--clr-hover-250: #0a4aa3bb;
 	--clr-hover-300: #074ab6bb;
-	--clr-hover-350: #063781ba;
 	--clr-hover-400: #0b3574b9;
-	--clr-hover-450: #062e6ab8;
 	--clr-hover-500: #072670b7;
-	--clr-hover-550: #052864b6;
 	--clr-hover-600: #00246db5;
-	--clr-hover-650: #001c5eb4;
 	--clr-hover-700: #000d5eb4;
 	--clr-hover-800: #05174ab3;
-	--clr-hover-850: #021336b2;
 
-
-	/** Neutral colors **/
+	/* Neutrals (grayscale) */
 	--clr-n-0: #ffffff;
 	--clr-n-50: #f5f5f5;
 	--clr-n-100: #c7c7c7;
-	--clr-n-150: #a0a0a0;
 	--clr-n-200: #a7a7a7;
-	--clr-n-250: #8e8e8e;
 	--clr-n-300: #787878;
-	--clr-n-350: #6f6f6f;
 	--clr-n-400: #595959;
-	--clr-n-450: #3f3f3f;
 	--clr-n-500: #3b3b3b;
-	--clr-n-550: #292929;
 	--clr-n-600: #242424;
 	--clr-n-700: #1f1f1f;
 	--clr-n-800: #0a0a0a;
 	--clr-n-900: #000000;
 
-	/** Transparency colors **/
+	/* Transparency */
 	--clr-tr-0: #ffffff00;
-	--clr-tr-50: #ffffff19;
 	--clr-tr-100: #ffffff1a;
-	--clr-tr-150: #ffffff26;
 	--clr-tr-200: #ffffff33;
-	--clr-tr-250: #ffffff4c;
 	--clr-tr-300: #ffffff4d;
-	--clr-tr-350: #ffffff5f;
 	--clr-tr-400: #ffffff66;
-	--clr-tr-450: #ffffff7f;
 	--clr-tr-500: #ffffff80;
-	--clr-tr-550: #ffffff87;
 	--clr-tr-600: #ffffff99;
-	--clr-tr-700: #ffffffb3;
 	--clr-tr-800: #ffffffcc;
-	--clr-tr-900: #ffffffe6;
 
-	/** Background and text colors **/
+	/* UI Colors */
 	--bg-clr-light: #dfdfdf;
 	--bg-clr-dark: #5c5c5c;
 	--bg-clr-imp: #4f4f4f;
 	--bg-clr-accent: #0066c5;
 	--txt-clr-light: #ededed;
 	--txt-clr-dark: #292727;
-
-	/** Border/Outline colors **/
 	--bdr-clr-light: #cbcbcb;
 	--bdr-clr-dark: #464646;
 
-	/** Sizes: **/
-	/* Font size (fs) */
+	/* Font sizes */
 	--fs-h1: 2.65rem;
 	--fs-h2: 2rem;
 	--fs-h3: 1.5rem;
-	--fs-nav: 1.05rem;
-	--fs-list: 1.3rem;
-	--fs-section: 1.8rem;
 	--fs-body: 1.25rem;
-	--fs-footer: 1.2rem;
+	--fs-nav: 1.05rem;
+	--fs-button: 0.94rem;
+	--fs-small: 0.85rem;
+	--fs-medium: 1rem;
+	--fs-large: 1.4rem;
+	--fs-xlarge: 1.75rem;
 
-	/* Font Weight (fw) */
+	/* Font weights */
 	--fw-text: 450;
-	--fw-imp: 650;
-	--fw-head: 750;
 	--fw-list: 550;
+	--fw-imp: 650;
 	--fw-section: 700;
-	--fw-footer: 550;
+	--fw-head: 750;
 
-	/* Margin (m) Padding (p) */
+	/* Spacing */
 	--m-min: 0.7rem;
 	--m-normal: 1rem;
-	--m-max: 3rem;
 	--m-box: 1.5rem;
 	--m-space: 2rem;
-	--m-height: 1.7rem;
-	--m-width: .85rem;
+	--m-max: 3rem;
 
-	--p-min: 0.25rem;
-	--p-normal: 1.3rem;
-	--p-max: 2.75rem;
+	--p-min: 0.35rem;
+	--p-btn: 0.38rem 0.6rem;
+	--p-normal: 1rem;
 	--p-box: 1.7rem;
 	--p-space: 2rem;
-	--p-width: .5rem;
-	--p-height: 1.8rem;
+	--p-max: 2.75rem;
+
+	/* Border Radius */
+	--br-min: 0.30rem;
+	--br-normal: 0.52rem;
+	--br-button: 0.70rem;
+	--br-max: 0.87rem;
 }
 
-/* Main Functional part start: */
+/* ==========================================================================
+  Base Styles
+   ========================================================================== */
 
+/* Reset box model and set defaults */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -166,125 +145,596 @@
 	font-family: system-ui, -apple-system, "Helvetica", sans-serif;
 }
 
+/* HTML and body base styles */
 html {
 	height: 100%;
 	width: 100%;
+	scroll-behavior: smooth;
+	/* Smooth scrolling for anchor links */
 }
-
 
 body {
-	background: linear-gradient(-45deg, #02011e, #002478);
+	/* background: linear-gradient(-45deg, 
+			var(--clr-p-700),
+			var(--clr-p-600),
+			var(--clr-p-500),
+			var(--clr-a-400),
+			var(--clr-a-250)); */
+	/* original gradient ^ */
+
+	background: linear-gradient(-45deg, var(--clr-Y-500), var(--clr-t-100), var(--clr-p-200), var(--clr-a-250),var(--clr-s-300), var(--clr-s-500));
+	background-size: 300% 300%;
+	animation: gradient-animation 40s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+	min-height: 100vh;
+	/* Full viewport height + width */
+	color: var(--clr-n-100);
+	/* Default text color */
+	line-height: 1.6;
+	/* Comfortable line height for readability */
+	display: flex;
+	flex-direction: column;
+  padding-top: 70px; /*? navbar spacing */
 }
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	25% {
+		background-position: 50% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	75% {
+		background-position: 50% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* animation ^ */
+
+/* Container for content centering and max-width */
+/* .container { */
+/* max-width: 100%; */
+/* width: 100%; */
+/* min-height: 100%; */
+/* margin: 0 auto; */
+/* padding: var(--p-normal); */
+
+/* Semi-transparent background with blur effect */
+/* background-color: rgba(20, 20, 20, 0.6);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px); */
+/* For Safari support */
+
+/* Styling for better appearance
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.1); */
+/* } */
+
+
+/*! CONTAINER WORK IN PROGRESS!! */
+
+/* ==========================================================================
+Main Functionality and Styling
+========================================================================== */
+
+
+header {
+	margin-bottom: var(--m-normal);
+	padding: var(--p-min);
+}
+
 
 h1 {
 	color: var(--clr-a-100);
 	font-weight: var(--fw-head);
-	font-family: "Monserrat", Helvetica, Verdana, sans-serif;
-	margin: var(--m-space);
+	font-family: "Montserrat", Helvetica, Verdana, sans-serif;
+	margin: var(--m-space) 0 var(--m-normal);
 	text-align: center;
+	font-size: var(--fs-h1);
 }
 
 h2 {
 	color: var(--clr-n-100);
 	font-family: "Arial", Helvetica, sans-serif;
-	margin: var(--m-box) var(--m-width);
+	margin: var(--m-box);
+	font-size: var(--fs-h2);
+	font-weight: var(--fw-section);
 }
 
+/* Subsection headings */
 h3 {
 	color: var(--clr-n-100);
 	font-family: "Arial", Helvetica, sans-serif;
-	margin: var(--m-box) var(--m-width);
+	margin: var(--m-normal);
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-imp);
 }
 
+/* Paragraph text */
 p {
 	color: var(--clr-n-100);
 	font-family: system-ui, "Verdana", sans-serif;
-	display: inline-flex;
-	margin: var(--m-box) var(--m-normal);
-	margin-right: 0;
+	margin: var(--m-normal) var(--m-normal);
+	font-size: var(--fs-body);
+	font-weight: var(--fw-text);
+	line-height: 1.5;
+}
+
+/* Content sections */
+section {
+	margin-bottom: var(--m-space);
 }
 
 
-footer {
-	position: fixed;
-	color: var(--txt-clr-light);
-	font-family: system-ui, 'Helvetica', sans-serif;
-	text-align: center;
-	width: 100%;
-	bottom: 10px;
-	font-size: var(--fs-footer);
-}
+/* ==========================================================================
+	Feature 1 Button
+========================================================================== */
 
-/* Main Functional part end. */
-
-
-/* Classes Start: */
 .f1 {
-	color: var(--clr-s-400);
-	background-color: var(--clr-n-600);
-	outline: #585858 solid 1.6px;
-	border-radius: 0.45rem;
+	/* Text styling */
+	color: var(--clr-s-200);
+	font-size: var(--fs-button);
 	font-family: "Segoe UI Variable", Tahoma, sans-serif;
 	letter-spacing: 0.5px;
+	text-align: center;
+
+	/* Visual styling */
+	background-color: var(--clr-n-600);
+	outline: var(--bdr-clr-dark) solid 1.6px;
+	border-radius: var(--br-button);
+	border: none;
+
+	/* Layout */
 	display: inline-flex;
-	justify-content: flex-end;
-	text-align: center;
-	padding: var(--p-min) var(--p-width);
+	justify-content: center;
+	align-items: center;
+	padding: var(--p-btn);
 	margin-left: 10px;
+
+	/* Interaction */
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+	/* Smooth transition for hover/active states */
 }
 
+/* Hover state */
 .f1:hover {
-	background-color: #178406;
-	color: #f0f8ff;
+	background-color: var(--clr-s-600);
+	color: var(--clr-n-50);
 }
 
+/* Active (pressed) state */
 .f1:active {
-	background-color: #23ae3f;
-	outline: #008504b6 solid 1.6px;
+	background-color: var(--clr-s-500);
+	outline: var(--clr-t-100) solid 1.6px;
 }
 
+/* ==========================================================================
+  Popover Feature
+========================================================================== */
 
-/* Classes End: */
+/* TESTED FOR FIREFOX ONLY (as of Developer Editon 137.0b6) */
 
-/** Popover code Section: */
-
-/* ! This doesn't work ! */
-
-/* DEPRECATED */
-
+/* Popover trigger button */
 #popbtn {
-	color: #349dff;
-	font-size: 0.94rem;
+	/* Text styling */
+	color: var(--clr-p-100);
+	font-size: var(--fs-button);
 	text-align: center;
-	padding: 0.2rem 0.5rem;
-	translate: 1rem;
-	position: relative;
-	background-color: #1d1d1d;
-	border: #2f2f2f 0.2rem solid;
+
+	/* Visual styling */
+	background-color: var(--clr-n-700);
+	border: var(--clr-n-500) 0.2rem solid;
 	border-radius: .6rem;
+
+	/* Layout */
+	padding: var(--p-btn);
+	margin-left: var(--m-normal);
+	position: relative;
+
+	/* Interaction */
+	cursor: pointer;
+	transition: all 0.5s ease-out;
 }
 
+/* Hover state for popover button */
 #popbtn:hover {
-	background-color: #002142;
-	color: #489ee9;
-	border: #3c4e60 solid 0.2rem;
+	background-color: var(--clr-p-600);
+	color: var(--clr-p-100);
+	border: var(--clr-p-400) solid 0.2rem;
 }
 
+/* Active (pressed) state for popover button */
 #popbtn:active {
 	border-style: outset;
 	border-width: 0.2rem;
-	border-color: #002142;
-	border-bottom-color: #0080ff;
-	border-right-color: #0080ff;
+	border-color: var(--clr-p-600);
+	border-bottom-color: var(--clr-a-100);
+	border-right-color: var(--clr-a-100);
 }
 
-
+/* Popover content container */
 #popup {
-	color: #fff;
-	padding: .5rem;
-	margin: auto;
+	/* Text styling */
+	color: var(--txt-clr-light);
+	font-weight: var(--fw-imp);
+	font-size: var(--fs-medium);
+
+	/* Visual styling */
 	background-color: var(--bg-clr-imp);
-	border: #2f2f2f 0.2rem solid;
+	border: var(--clr-n-500) 0.2rem solid;
 	border-radius: .6rem;
-	position: absolute;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+	/* Layout */
+	padding: 0.8rem;
+
+	/* Positioning for FIREFOX (Developer Edition TESTED ONLY!!) popover API */
+	position: fixed;
+	inset: auto;
+	margin: 0;
+	top: var(--popover-top, auto);
+	left: var(--popover-left, auto);
+
+	/* Animation */
+	transition: opacity 0.5s ease-out;
 }
+
+/* Backdrop styling for popover */
+#popup::backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent overlay */
+}
+
+/* ==========================================================================
+    Navbar Styling
+   ========================================================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* This creates space between elements */
+    align-items: center;
+    background-color: var(--clr-n-700);
+    padding: 1rem var(--p-normal);
+    border-bottom: 2px solid var(--clr-a-300);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.navbar-logo {
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-head);
+	color: var(--clr-a-100);
+	text-decoration: none;
+	font-family: "Montserrat", Helvetica, Verdana, sans-serif;
+	margin-right: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Push nav items to the right */
+    margin-right: 1rem; /* Add space between nav and search */
+}
+
+.nav-item {
+	margin: 0 0.5rem;
+}
+
+.nav-link {
+	color: var(--clr-n-100);
+	text-decoration: none;
+	font-size: var(--fs-nav);
+	font-weight: var(--fw-list);
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.3rem;
+	transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+	background-color: var(--clr-hover-300);
+	color: var(--clr-n-50);
+}
+
+.nav-link.active {
+	background-color: var(--clr-a-250);
+	color: var(--clr-n-50);
+}
+
+/* CSS-only mobile menu toggle */
+.navbar-toggle-checkbox {
+	display: none;
+}
+
+.navbar-toggle {
+	display: none;
+	background: none;
+	border: none;
+	color: var(--clr-n-100);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* Media query for responsive navbar */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between; /* Ensure space between on mobile */
+    }
+    
+    .navbar-toggle {
+		display: block;
+	}
+
+    .navbar-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--clr-n-700);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        z-index: 99;
+        border-bottom: 2px solid var(--clr-a-300);
+        margin-left: 0; /* Reset margin on mobile */
+        margin-right: 0; /* Reset margin on mobile */
+    }
+
+	.navbar-toggle-checkbox:checked~.navbar-nav {
+		transform: translateY(0);
+	}
+
+	.nav-item {
+		margin: 0.5rem 0;
+	}
+    
+    .navbar-search {
+        margin-right: 50px; /* Make room for hamburger menu */
+    }
+}
+
+
+/* ==========================================================================
+    Navbar Search Bar Styling
+   ========================================================================== */
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent search from shrinking */
+    position: relative;
+    border-radius: var(--br-min);
+    background-color: var(--clr-n-600);
+    border: 1px solid var(--clr-n-500);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 250px;
+}
+
+.navbar-search:focus-within {
+    border-color: var(--clr-a-100);
+    background-color: var(--clr-n-700);
+}
+
+.navbar-search-input {
+    padding: 0.4rem 0.6rem;
+    border: none;
+    background-color: transparent;
+    color: var(--clr-n-100);
+    font-size: var(--fs-small);
+    outline: none;
+    width: 100%;
+}
+
+.navbar-search-input::placeholder {
+    color: var(--clr-n-300);
+}
+
+.navbar-search-button {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-n-100);
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-search-button:hover {
+    color: var(--clr-a-100);
+}
+
+.search-icon {
+    font-size: 1rem;
+}
+
+/* For very small screens, hide search until clicked */
+@media (max-width: 480px) {
+    .navbar-search {
+        max-width: 40px;
+        overflow: hidden;
+        transition: max-width 0.3s ease;
+    }
+    
+    .navbar-search:focus-within {
+        max-width: 150px;
+    }
+    
+    .navbar-search-input {
+        width: 0;
+        padding: 0.4rem 0;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+    
+    .navbar-search:focus-within .navbar-search-input {
+        width: 100px;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+
+/* ==========================================================================
+    About Page Heading Styling
+   ========================================================================== */
+/* 
+.about-heading {
+    position: relative;
+    display: inline-block;
+    padding: var(--p-normal) var(--p-box);
+    margin: var(--m-space) auto;
+    text-align: center;
+    width: auto;
+    max-width: 80%;
+}
+
+.about-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    border-radius: var(--br-normal);
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: var(--m-space);
+} */
+
+
+/* ==========================================================================
+    Acrylic/Mica Container Styling
+   ========================================================================== */
+
+.acrylic-container {
+		flex: 1;
+    position: relative;
+		max-width: 1800px;
+		height: 800px;
+    width: 100%;
+    margin: 40px auto auto; /* Top margin accounts for navbar */
+    padding: var(--p-max);
+    border-radius: var(--br-normal);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.acrylic-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: var(--br-normal);
+}
+
+/* Adjust header and section spacing within acrylic container */
+.acrylic-container header {
+    background-color: transparent;
+    margin-bottom: var(--m-normal);
+    padding: 0;
+}
+
+.acrylic-container section {
+    position: relative;
+    margin-bottom: var(--m-normal);
+    padding: var(--p-normal);
+    border-radius: var(--br-min);
+    border-left: 3px solid var(--clr-a-200);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.acrylic-container .l2h {
+		border: none;
+}
+
+.acrylic-container h1 {
+    margin-top: var(--m-min);
+}
+
+.acrylic-container h2 {
+    margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .acrylic-container {
+        width: 95%;
+        padding: var(--p-normal);
+    }
+    
+    .acrylic-container section {
+        padding: var(--p-min);
+    }
+}
+
+/* Footer styling */
+footer {
+    position: relative;
+    color: var(--txt-clr-light);
+    font-family: system-ui, 'Helvetica', sans-serif;
+    text-align: center;
+    padding: var(--p-min);
+    margin-top: auto; /* Push to bottom of flex container */
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-text);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+/* Add padding to the bottom of the acrylic container to prevent content from being hidden by the footer*/
+.acrylic-container {
+    margin-bottom: var(--m-normal); /* Add space for the footer */
+    padding-bottom: var(--p-normal);
+}
+
+/* Add padding to the top of the body to ensure scrolling works correctly with fixed footer */
+body {
+    padding-top: 70px;
+}
+
