@@ -3,33 +3,37 @@
 > [!Note]
 > This isn't a replacement for the GitHub Project, which shows the latest updates.
 > This local roadmap is just a rough outline of planned milestones and features.
-> The GitHub Project board shows the actual progress and latest updates. The Project Board shows latest issues and PR's in progress.
+> The GitHub Project board shows the actual progress and latest updates.
+> The Project Board shows latest issues and PR's in progress.
 
-## 1.0.0 - 5 June 2024
+## 1.0.0
 
-- [ ] Fully Responsive Site.
+- [x] Navbar Implemetation in the main page
+- [x] Add About Page.
+- [x] Add JS.
 - [ ] Add a Search Bar.
-- [ ] Add About Page.
 - [ ] Add FAQ Page.
 
-## 1.5.0 - 15 July 2024
+## 1.5.0
 
-- [ ] Add a Credits Page.
 - [ ] Add a Help Page.
+- [ ] Use JS to make the website more powerful.
 - [ ] Add a Git Commands Page.
 
-## 2.0.0 - 10 August 2024
+## 2.0.0
 
-- [ ] Add JS to use more powerful functionality
 - [ ] Add a Cheat Sheet Page.
-- [ ] Theme Switcher.
 - [ ] Add Changelog.
+- [ ] Add a Credits Page.
+
+## 2.5.0
+
 - [ ] Add More Features.
-- [ ] Add Documentation.
-
-## 2.5.0 - 27 August 2024
-
+- [ ] Fully Responsive Site.
 - [ ] Add More Themes.
-- [ ] Add languages like SCSS, Sass, Less, etc.
-- [ ] Add Processors like PostCSS for optimizing code.
+
+## 3.0.0
+
+- [ ] Theme Switcher.
+- [ ] Add Documentation.
 - [ ] Make the website more dynamic.

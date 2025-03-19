@@ -9,29 +9,28 @@ Local Repo Status:
 
 ## What is this?
 
-This is a website created for test purposes. Every day I will either change it or test something.
+LocalRepo is a 
 
 ## Why did you create this?
 
-It's because I wanted to learn Git and Github!😄
+I wanted to learn Front end Development and I wanted to teach the entire world how to write cool websites! I made this repository to grab the all the knowledge and code from the internet and put it at one place for easy convenience for everyone.
 
 ## How did you create this?
 
-Using some tutorials!😉
+I created this repository using HTML and CSS. I used Git to manage the code. I used Github Pages to host the website.
 
 ## Current Progress
 
-- [x] Learn basic Git commands
-- [x] Learn GitHub.
+- [x] Complete the Git and Github Setup for the Repo.
 - [x] Create basic structure of the website.
 - [x] Add dark theme.
 - [x] Add Testing area.
-- [ ] Learn JavaScript.
+- [x] Learn JavaScript.
 - [ ] Implement JavaScript.
 - [ ] Complete RWD (Responsive Website Design).
 - [ ] Add more features.
 
-Need more precise progress? Check out my project!
+Need more precise progress? Check my To-Do List
 
 ## Experiments for Markdown
 
@@ -60,7 +59,6 @@ Need more precise progress? Check out my project!
 
 ### Other styling Experiments
 
-<!-- markdownlint-disable-next-line MD022-->
 |  Table Heading  |
 | --------------- |
 | What?           |

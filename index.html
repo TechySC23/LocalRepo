@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8" />
-		<meta content="IE=edge" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>LocalRepo Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- <meta name="color-scheme" content="dark" /> -->
@@ -11,26 +10,47 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>LocalRepo</h1>
-			<p>This is my repo and this is my practice workspace for Github (or Git). I use this repo to test a lot of things
-				in html and css.</p>
-		</header>
-		<section>
-			<h2>Feature 1</h2>
-			<p>This is our new feature, introducing</p>
-			<button type="submit" class="f1">Feature</button>
-		</section>
-		<!-- Popover code Section: -->
-		<section>
-			<h3>Feature 2</h3>
-			<p>Click the button to see the surprise!</p>
-			<button id="popbtn" popovertarget="popup">Secret Button</button>
-			<p id="popup" anchor="popbtn" popover>I am the surprise![DEPRECATED Remove in beta 0.0.7]</p>
-		</section>
-		<footer class="footer">
-			Open Source Website 2024. Made by @TechySC with Github, Git, and VS Code!
-		</footer>
-	</body>
+		<div class="container">
+			<header>
+				<p>Hello Everybody! This is LocalRepo's Home Page.</p>
+			</header>
 
+			<section>
+				<h2>Feature 1</h2>
+				<p>This is our new feature, introducing</p>
+				<button type="button" class="f1">Feature</button>
+			</section>
+			<!-- Popover code Section: -->
+			<section>
+				<h3>Feature 2</h3>
+				<p>Click the button to see the surprise!</p>
+				<button id="popbtn" popovertarget="popup" type="button">Secret Button</button>
+				<div id="popup" popover="manual" defaultopen="false">I am the surprise!</div>
+			</section>
+
+			<!-- New Navbar -->
+			<nav class="navbar">
+				<div class="navbar-brand">
+					<a href="index.html" class="navbar-logo">LocalRepo</a>
+				</div>
+				<input type="checkbox" id="navbar-toggle-checkbox" class="navbar-toggle-checkbox" />
+				<label for="navbar-toggle-checkbox" class="navbar-toggle">☰</label>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link active">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="Experiments.html" class="nav-link">Experiments</a>
+					</li>
+					<li class="nav-item">
+						<a href="lab.html" class="nav-link">Test Lab</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<footer>Open Source Website 2025. Made by @TechySC with VS Code!</footer>
+	</body>
 </html>
