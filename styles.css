@@ -25,6 +25,7 @@ CSS root variables
 
 	/* Secondary (greens) */
 	--clr-s-200: #30ff3e;
+	--clr-s-300: #0be70b;
 	--clr-s-400: #07b707;
 	--clr-s-500: #00bc00;
 	--clr-s-600: #009900;
@@ -161,16 +162,23 @@ body {
 			var(--clr-a-250)); */
 	/* original gradient ^ */
 
-	background: linear-gradient(-45deg, var(--clr-t-300), var(--clr-t-100), var(--clr-a-400), var(--clr-p-200), var(--clr-s-600), var(--clr-s-400));
-	background-size: 400% 400%;
+	background: linear-gradient(-45deg, var(--clr-Y-500), var(--clr-t-100), var(--clr-p-200), var(--clr-a-250),var(--clr-s-300), var(--clr-s-500));
+	background-size: 300% 300%;
 	animation: gradient-animation 40s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 	min-height: 100vh;
-	min-width: 100vh;
 	/* Full viewport height + width */
 	color: var(--clr-n-100);
 	/* Default text color */
 	line-height: 1.6;
 	/* Comfortable line height for readability */
+	display: flex;
+	flex-direction: column;
+  padding-top: 70px; /*? navbar spacing */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
 }
 
 @keyframes gradient-animation {
@@ -226,7 +234,8 @@ Main Functionality and Styling
 
 
 header {
-	margin-bottom: var(--m-space);
+	margin-bottom: var(--m-normal);
+	padding: var(--p-min);
 }
 
 
@@ -271,20 +280,6 @@ section {
 	margin-bottom: var(--m-space);
 }
 
-/* Footer styling */
-footer {
-	position: fixed;
-	color: var(--txt-clr-light);
-	font-family: system-ui, 'Helvetica', sans-serif;
-	text-align: center;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: var(--p-min);
-	font-size: var(--fs-medium);
-	font-weight: var(--fw-text);
-	background-color: rgba(0, 0, 0, 0.3);
-}
 
 /* ==========================================================================
 	Feature 1 Button
@@ -425,11 +420,6 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Add padding to the body to prevent content from being hidden under the navbar */
-body {
-	padding-top: 70px;
-	/* Adjust this value based on your navbar height */
-}
 
 .navbar-brand {
     display: flex;
@@ -610,3 +600,141 @@ body {
         padding: 0.4rem 0.6rem;
     }
 }
+
+
+/* ==========================================================================
+    About Page Heading Styling
+   ========================================================================== */
+/* 
+.about-heading {
+    position: relative;
+    display: inline-block;
+    padding: var(--p-normal) var(--p-box);
+    margin: var(--m-space) auto;
+    text-align: center;
+    width: auto;
+    max-width: 80%;
+}
+
+.about-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    border-radius: var(--br-normal);
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: var(--m-space);
+} */
+
+
+/* ==========================================================================
+    Acrylic/Mica Container Styling
+   ========================================================================== */
+
+.acrylic-container {
+		flex: 1;
+    position: relative;
+		max-width: 1800px;
+		height: 800px;
+    width: 100%;
+    margin: 40px auto auto; /* Top margin accounts for navbar */
+    padding: var(--p-max);
+    border-radius: var(--br-normal);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.acrylic-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: var(--br-normal);
+}
+
+/* Adjust header and section spacing within acrylic container */
+.acrylic-container header {
+    background-color: transparent;
+    margin-bottom: var(--m-normal);
+    padding: 0;
+}
+
+.acrylic-container section {
+    position: relative;
+    margin-bottom: var(--m-normal);
+    padding: var(--p-normal);
+    border-radius: var(--br-min);
+    border-left: 3px solid var(--clr-a-200);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.acrylic-container .l2h {
+		border: none;
+}
+
+.acrylic-container h1 {
+    margin-top: var(--m-min);
+}
+
+.acrylic-container h2 {
+    margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .acrylic-container {
+        width: 95%;
+        padding: var(--p-normal);
+    }
+    
+    .acrylic-container section {
+        padding: var(--p-min);
+    }
+}
+
+/* Footer styling */
+footer {
+    position: relative;
+    color: var(--txt-clr-light);
+    font-family: system-ui, 'Helvetica', sans-serif;
+    text-align: center;
+    padding: var(--p-min);
+    margin-top: auto; /* Push to bottom of flex container */
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-text);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+/* Add padding to the bottom of the acrylic container to prevent content from being hidden by the footer*/
+.acrylic-container {
+    margin-bottom: var(--m-normal); /* Add space for the footer */
+    padding-bottom: var(--p-normal);
+}
+
+/* Add padding to the top of the body to ensure scrolling works correctly with fixed footer */
+body {
+    padding-top: 70px;
+}
+

@@ -9,7 +9,7 @@ Local Repo Status:
 
 ## What is this?
 
-LocalRepo is a 
+LocalRepo is a website that contains all the information about html and css. It is a great resource for anyone who wants to learn front end development.
 
 ## Why did you create this?
 
