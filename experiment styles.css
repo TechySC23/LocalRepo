@@ -158,49 +158,6 @@
 	font-family: "Consolas", monospace;
 }
 
-
-/* The actual navbar: */
-
-.navtab a {
-	display: flex;
-	text-decoration: none;
-	text-align: center;
-	padding: 10px 20px;
-	color: var(--txt-clr-light);
-	background-color: var(--clr-n-450);
-	outline: 1px solid var(--bdr-clr-light);
-	outline-offset: .5px;
-	font-size: var(--fs-nav);
-	border-radius: 0.5em;
-}
-
-li:last-child a {
-	margin-right: var(--m-min);
-}
-
-li a:hover {
-	background-color: var(--clr-s-650);
-	color: var(--txt-clr-light);
-}
-
-.logo {
-	display: flex;
-	background-color: var(--clr-p-300);
-	padding: .2rem var(--p-min);
-	justify-content: center;
-	align-items: center;
-}
-
-h1 {
-	color: var(--txt-clr-light);
-	text-align: center;
-	margin: 0;
-	padding: var(--p-normal);
-}
-
-
-/*! So many lines of code isnt it? Check out styles.css for the smaller but working code!! */
-/* Navbar code end. */
 /* Fake Progress Bars! */
 
 #container {
