@@ -158,60 +158,6 @@
 	font-family: "Consolas", monospace;
 }
 
-/** Really Complex Navbar code: **/
-
-/* For the whole area behind the li's and a's: */
-ul.nav {
-	/* background-color: var(--clr-s-500); */
-	display: flex;
-	width: 100%;
-	padding: 0;
-}
-
-/* For the areas behind the actual navbar but above the ul: */
-
-/* li.navtab {
-	align-self: center;
-	padding: var(--p-min);
-	list-style: none;
-	margin-inline: var(--m-space) var(--m-min);
-	display: flex;
-	justify-items: center;
-	align-content: center;
-	width: 100%;
-	padding: 10px 20px;
-	justify-content: space-evenly;
-	outline: 1px solid var(--bdr-clr-light);
-} */
-
-/** Hmm What about selecting ONLY .navtab? */
-
-.navtab {
-	align-self: center;
-	/* padding: var(--p-min); */
-	list-style: none;
-	margin-inline: var(--m-space) var(--m-min);
-	display: flex;
-	/* justify-items: center; */
-	align-content: center;
-	/* width: 100%; */
-	padding: 10px 20px;
-	justify-content: space-evenly;
-	/* outline: 1px solid var(--bdr-clr-light); */
-}
-
-/* * This still doesn't work */
-
-/* ? Playing with specificity up there^ */
-
-/* !This below block of code just DOESN'T WORK! */
-div.navtabs {
-	background-color: var(--clr-n-250);
-	display: flex;
-	/* align-self: flex-end; This works?? */
-}
-
-/* TODO: Fix the NAVBAR!  */
 
 /* The actual navbar: */
 
