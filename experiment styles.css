@@ -1,163 +1,133 @@
 :root {
-	/** Primary colors **/
+	/* Color Palettes */
+	/* Primary (blues) */
 	--clr-p-100: #3b90ff;
-	--clr-p-150: #1a7ce9;
 	--clr-p-200: #0b5ecb;
-	--clr-p-300: #084fab;
 	--clr-p-400: #09377c;
 	--clr-p-500: #082873;
-	--clr-p-550: #052164;
 	--clr-p-600: #041869;
 	--clr-p-700: #030b40;
 	--clr-p-800: #020a2d;
 
-	/** Accent Colors **/
+	/* Accent (deeper blues) */
 	--clr-a-100: #0081e4;
 	--clr-a-200: #0066c5;
 	--clr-a-250: #0053a6;
 	--clr-a-300: #0049a6;
-	--clr-a-350: #00429e;
-	--clr-a-375: #003f9e;
 	--clr-a-400: #00318e;
-	--clr-a-450: #002a7e;
 	--clr-a-500: #001f76;
-	--clr-a-550: #001a6e;
 	--clr-a-600: #00116b;
-	--clr-a-650: #000f67;
 	--clr-a-700: #000c63;
-	--clr-a-800: #000a5f;
 
-	/** Secondary Colors **/
-	--clr-s-100: #44fb69;
+	/* Secondary (greens) */
 	--clr-s-200: #30ff3e;
-	--clr-s-300: #1eff1e;
-	--clr-s-350: #04db04;
-	--clr-s-375: #03b703;
+	--clr-s-300: #0be70b;
 	--clr-s-400: #07b707;
-	--clr-s-450: #05a905;
 	--clr-s-500: #00bc00;
 	--clr-s-600: #009900;
-	--clr-s-650: #007700;
 	--clr-s-700: #006600;
-	--clr-s-750: #004c00;
 	--clr-s-800: #003300;
 
-	/** Tertiary Colors **/
+	/* Tertiary (oranges/reds) */
 	--clr-t-100: #f1a518;
-	--clr-t-200: #f09a17;
 	--clr-t-300: #f08e16;
-	--clr-t-350: #f07c15;
 	--clr-t-400: #f06a14;
 	--clr-t-500: #f05813;
-	--clr-t-600: #f04612;
-	--clr-t-650: #f03511;
 	--clr-t-700: #f02310;
 	--clr-t-800: #f0110f;
 
-	/** Hover Colors **/
+	/* Yellows (4th pallete) */
+	--clr-Y-100: #fff9c4;
+	--clr-Y-200: #fff176;
+	--clr-Y-300: #ffeb3b;
+	--clr-Y-400: #fbc02d;
+	--clr-Y-500: #f57f17;
+	--clr-Y-600: #ff6f00;
+	--clr-Y-700: #e65100;
+	--clr-Y-900: #8d2401;
+
+	/* Hover states */
 	--clr-hover-100: #0c78e4be;
-	--clr-hover-150: #0e63d4bd;
 	--clr-hover-200: #0b54b3bc;
-	--clr-hover-250: #0a4aa3bb;
 	--clr-hover-300: #074ab6bb;
-	--clr-hover-350: #063781ba;
 	--clr-hover-400: #0b3574b9;
-	--clr-hover-450: #062e6ab8;
 	--clr-hover-500: #072670b7;
-	--clr-hover-550: #052864b6;
 	--clr-hover-600: #00246db5;
-	--clr-hover-650: #001c5eb4;
 	--clr-hover-700: #000d5eb4;
 	--clr-hover-800: #05174ab3;
-	--clr-hover-850: #021336b2;
 
-
-	/** Neutral colors **/
+	/* Neutrals (grayscale) */
 	--clr-n-0: #ffffff;
 	--clr-n-50: #f5f5f5;
 	--clr-n-100: #c7c7c7;
-	--clr-n-150: #a0a0a0;
 	--clr-n-200: #a7a7a7;
-	--clr-n-250: #8e8e8e;
 	--clr-n-300: #787878;
-	--clr-n-350: #6f6f6f;
 	--clr-n-400: #595959;
-	--clr-n-450: #3f3f3f;
 	--clr-n-500: #3b3b3b;
-	--clr-n-550: #292929;
 	--clr-n-600: #242424;
 	--clr-n-700: #1f1f1f;
 	--clr-n-800: #0a0a0a;
 	--clr-n-900: #000000;
 
-	/** Transparency colors **/
+	/* Transparency */
 	--clr-tr-0: #ffffff00;
-	--clr-tr-50: #ffffff19;
 	--clr-tr-100: #ffffff1a;
-	--clr-tr-150: #ffffff26;
 	--clr-tr-200: #ffffff33;
-	--clr-tr-250: #ffffff4c;
 	--clr-tr-300: #ffffff4d;
-	--clr-tr-350: #ffffff5f;
 	--clr-tr-400: #ffffff66;
-	--clr-tr-450: #ffffff7f;
 	--clr-tr-500: #ffffff80;
-	--clr-tr-550: #ffffff87;
 	--clr-tr-600: #ffffff99;
-	--clr-tr-700: #ffffffb3;
 	--clr-tr-800: #ffffffcc;
-	--clr-tr-900: #ffffffe6;
 
-	/** Background and text colors **/
+	/* UI Colors */
 	--bg-clr-light: #dfdfdf;
 	--bg-clr-dark: #5c5c5c;
 	--bg-clr-imp: #4f4f4f;
 	--bg-clr-accent: #0066c5;
 	--txt-clr-light: #ededed;
 	--txt-clr-dark: #292727;
-
-	/** Border/Outline colors **/
 	--bdr-clr-light: #cbcbcb;
 	--bdr-clr-dark: #464646;
 
-	/** Sizes: **/
-	/* Font size (fs) */
+	/* Font sizes */
 	--fs-h1: 2.65rem;
 	--fs-h2: 2rem;
 	--fs-h3: 1.5rem;
-	--fs-nav: 1.05rem;
-	--fs-list: 1.3rem;
-	--fs-section: 1.8rem;
 	--fs-body: 1.25rem;
-	--fs-footer: 1.5rem;
+	--fs-nav: 1.05rem;
+	--fs-button: 0.94rem;
+	--fs-small: 0.85rem;
+	--fs-medium: 1rem;
+	--fs-large: 1.4rem;
+	--fs-xlarge: 1.75rem;
 
-	/* Font Weight (fw) */
+	/* Font weights */
 	--fw-text: 450;
-	--fw-imp: 650;
-	--fw-head: 750;
 	--fw-list: 550;
+	--fw-imp: 650;
 	--fw-section: 700;
-	--fw-footer: 550;
+	--fw-head: 750;
 
-	/* Margin (m) Padding (p) */
+	/* Spacing */
 	--m-min: 0.7rem;
 	--m-normal: 1rem;
-	--m-max: 3rem;
 	--m-box: 1.5rem;
 	--m-space: 2rem;
-	--m-height: 1.7rem;
-	--m-width: .85rem;
+	--m-max: 3rem;
 
-	--p-min: 0.25rem;
-	--p-normal: 1.3rem;
-	--p-max: 2.75rem;
+	--p-min: 0.35rem;
+	--p-btn: 0.38rem 0.6rem;
+	--p-normal: 1rem;
 	--p-box: 1.7rem;
 	--p-space: 2rem;
-	--p-width: .5rem;
-	--p-height: 1.8rem;
+	--p-max: 2.75rem;
 
+	/* Border Radius */
+	--br-min: 0.30rem;
+	--br-normal: 0.52rem;
+	--br-button: 0.70rem;
+	--br-max: 0.87rem;
 }
-
 * {
 	margin: 0;
 	padding: 0;
