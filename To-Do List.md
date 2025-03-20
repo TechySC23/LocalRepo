@@ -6,32 +6,41 @@
 > The GitHub Project board shows the actual progress and latest updates.
 > The Project Board shows latest issues and PR's in progress.
 
-## 1.0.0
+## 0.1.0.A
 
 - [x] Navbar Implemetation in the main page
 - [x] Add About Page.
-- [x] Add JS.
-- [ ] Add a Search Bar.
+- [x] Add a Search Bar.
+- [x] Start RWD (Responsive Website Design).
 
-## 1.5.0
+## 0.1.5.A
 
-- [ ] Add a Help Page.
+- [ ] Complete the Responsive Website Design (RWD) for mobile devices
+- [ ] Improve navigation for smaller screens
+- [ ] Add JS.
+
+## 0.2.0.A
+
+- [ ] Create a feedback form for users
+- [ ] Optimize images and assets for faster loading
 - [ ] Use JS to make the website more powerful.
+- [ ] Add a Help Page.
 - [ ] Add a Git Commands Page.
 
-## 2.0.0
+## 0.2.5.A
 
+- [ ] Add a dark/light theme toggle
 - [ ] Add a Cheat Sheet Page.
 - [ ] Add Changelog.
 - [ ] Add a Credits Page.
 
-## 2.5.0
+## 0.3.0.A
 
 - [ ] Add More Features.
 - [ ] Fully Responsive Site.
 - [ ] Add More Themes.
 
-## 3.0.0
+## 0.3.5.A
 
 - [ ] Theme Switcher.
 - [ ] Add Documentation.

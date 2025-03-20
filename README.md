@@ -32,6 +32,17 @@ I created this repository using HTML and CSS. I used Git to manage the code. I u
 
 Need more precise progress? Check my To-Do List
 
+## Versioning System
+
+This project uses this type of versioning: MAJOR.MINOR.PATCH.SNAPSHOT | This Means: MAJOR - V1, V2, V3, etc. MINOR - 0.***1***, 0.***2***, 0.***3***, etc. PATCH - 0.0.***1***, 0.0.***2***, 0.0.***3***, etc. SNAPSHOT - 0.0.0.***A***, 0.0.0.***B***, 0.0.0.***C***, etc.
+
+We are currently updating the repo to match the new versioning system.
+It previously followed the SemVer kind of system: MAJOR.MINOR.PATCH, but not using the major version making it kind of like: 0.MAJOR.MINOR and the commits as patches.
+
+> [!Important]
+> Semver Will NEVER be used in this repo, as it is inconvenient to use.
+> And it creates technical challenges like converting the version system.
+
 ## Experiments for Markdown
 
 ### Normal, Note, Important, Warning Blockquotes
@@ -54,7 +65,7 @@ Need more precise progress? Check my To-Do List
 
 ### Text Styling
 
-**Very Important Text** _Very Important Text_
+**Very Important Text** *Very Important Text*
 ~~Deprecated~~
 
 ### Other styling Experiments
