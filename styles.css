@@ -134,8 +134,8 @@ CSS root variables
 }
 
 /* ==========================================================================
-  Base Styles
-   ========================================================================== */
+   Base Styles
+========================================================================== */
 
 /* Reset box model and set defaults */
 * {
@@ -146,98 +146,65 @@ CSS root variables
 }
 
 /* HTML and body base styles */
-html {
+html,
+body {
 	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	scroll-behavior: smooth;
-	/* Smooth scrolling for anchor links */
 }
 
 body {
-	/* background: linear-gradient(-45deg, 
-			var(--clr-p-700),
-			var(--clr-p-600),
-			var(--clr-p-500),
-			var(--clr-a-400),
-			var(--clr-a-250)); */
-	/* original gradient ^ */
-
-	background: linear-gradient(-45deg, var(--clr-Y-500), var(--clr-t-100), var(--clr-p-200), var(--clr-a-250),var(--clr-s-300), var(--clr-s-500));
+	background: linear-gradient(
+		-45deg,
+		var(--clr-Y-500),
+		var(--clr-t-100),
+		var(--clr-p-200),
+		var(--clr-a-250),
+		var(--clr-s-300),
+		var(--clr-s-500)
+	);
 	background-size: 300% 300%;
 	animation: gradient-animation 40s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-	min-height: 100vh;
-	/* Full viewport height + width */
 	color: var(--clr-n-100);
-	/* Default text color */
 	line-height: 1.6;
-	/* Comfortable line height for readability */
 	display: flex;
 	flex-direction: column;
-  padding-top: 70px; /*? navbar spacing */
+	padding-top: 70px; /* navbar spacing */
 }
 
-html, body {
-    height: 100%;
-    min-height: 100%;
-}
-
+/* Smooth scrolling for anchor links */
 @keyframes gradient-animation {
 	0% {
 		background-position: 0% 50%;
 	}
-
 	25% {
 		background-position: 50% 50%;
 	}
-
 	50% {
 		background-position: 100% 50%;
 	}
-
 	75% {
 		background-position: 50% 50%;
 	}
-
 	100% {
 		background-position: 0% 50%;
 	}
 }
 
-/* animation ^ */
-
-/* Container for content centering and max-width */
-/* .container { */
-/* max-width: 100%; */
-/* width: 100%; */
-/* min-height: 100%; */
-/* margin: 0 auto; */
-/* padding: var(--p-normal); */
-
-/* Semi-transparent background with blur effect */
-/* background-color: rgba(20, 20, 20, 0.6);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px); */
-/* For Safari support */
-
-/* Styling for better appearance
-	border-radius: 8px;
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-	border: 1px solid rgba(255, 255, 255, 0.1); */
-/* } */
-
-
-/*! CONTAINER WORK IN PROGRESS!! */
-
 /* ==========================================================================
+
+. container { ... } – Work in progress, keep for future reference
+*/
+
+/* ========================================================================== 
 Main Functionality and Styling
 ========================================================================== */
-
 
 header {
 	margin-bottom: var(--m-normal);
 	padding: var(--p-min);
 }
-
 
 h1 {
 	color: var(--clr-a-100);
@@ -256,7 +223,6 @@ h2 {
 	font-weight: var(--fw-section);
 }
 
-/* Subsection headings */
 h3 {
 	color: var(--clr-n-100);
 	font-family: "Arial", Helvetica, sans-serif;
@@ -265,7 +231,6 @@ h3 {
 	font-weight: var(--fw-imp);
 }
 
-/* Paragraph text */
 p {
 	color: var(--clr-n-100);
 	font-family: system-ui, "Verdana", sans-serif;
@@ -275,91 +240,67 @@ p {
 	line-height: 1.5;
 }
 
-/* Content sections */
 section {
 	margin-bottom: var(--m-space);
 }
 
-
-/* ==========================================================================
-	Feature 1 Button
+/* ========================================================================== 
+Feature 1 Button
 ========================================================================== */
 
 .f1 {
-	/* Text styling */
 	color: var(--clr-s-200);
 	font-size: var(--fs-button);
 	font-family: "Segoe UI Variable", Tahoma, sans-serif;
 	letter-spacing: 0.5px;
 	text-align: center;
-
-	/* Visual styling */
 	background-color: var(--clr-n-600);
 	outline: var(--bdr-clr-dark) solid 1.6px;
 	border-radius: var(--br-button);
 	border: none;
-
-	/* Layout */
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	padding: var(--p-btn);
 	margin-left: 10px;
-
-	/* Interaction */
 	cursor: pointer;
 	transition: all 0.5s ease-out;
-	/* Smooth transition for hover/active states */
 }
 
-/* Hover state */
 .f1:hover {
 	background-color: var(--clr-s-600);
 	color: var(--clr-n-50);
 }
 
-/* Active (pressed) state */
 .f1:active {
 	background-color: var(--clr-s-500);
 	outline: var(--clr-t-100) solid 1.6px;
 }
 
-/* ==========================================================================
-  Popover Feature
+/* ========================================================================== 
+Popover Feature
 ========================================================================== */
 
-/* TESTED FOR FIREFOX ONLY (as of Developer Editon 137.0b6) */
-
-/* Popover trigger button */
 #popbtn {
-	/* Text styling */
 	color: var(--clr-p-100);
 	font-size: var(--fs-button);
 	text-align: center;
-
-	/* Visual styling */
 	background-color: var(--clr-n-700);
 	border: var(--clr-n-500) 0.2rem solid;
 	border-radius: .6rem;
-
-	/* Layout */
 	padding: var(--p-btn);
 	margin-left: var(--m-normal);
 	position: relative;
-
-	/* Interaction */
 	cursor: pointer;
 	transition: all 0.5s ease-out;
 }
 
-/* Hover state for popover button */
 #popbtn:hover {
 	background-color: var(--clr-p-600);
 	color: var(--clr-p-100);
 	border: var(--clr-p-400) solid 0.2rem;
 }
 
-/* Active (pressed) state for popover button */
 #popbtn:active {
 	border-style: outset;
 	border-width: 0.2rem;
@@ -368,63 +309,50 @@ section {
 	border-right-color: var(--clr-a-100);
 }
 
-/* Popover content container */
 #popup {
-	/* Text styling */
 	color: var(--txt-clr-light);
 	font-weight: var(--fw-imp);
 	font-size: var(--fs-medium);
-
-	/* Visual styling */
 	background-color: var(--bg-clr-imp);
 	border: var(--clr-n-500) 0.2rem solid;
 	border-radius: .6rem;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-	/* Layout */
 	padding: 0.8rem;
-
-	/* Positioning for FIREFOX (Developer Edition TESTED ONLY!!) popover API */
 	position: fixed;
 	inset: auto;
 	margin: 0;
 	top: var(--popover-top, auto);
 	left: var(--popover-left, auto);
-
-	/* Animation */
 	transition: opacity 0.5s ease-out;
 }
 
-/* Backdrop styling for popover */
 #popup::backdrop {
 	background-color: rgba(0, 0, 0, 0.5);
-	/* Semi-transparent overlay */
 }
 
-/* ==========================================================================
-    Navbar Styling
-   ========================================================================== */
+/* ========================================================================== 
+Navbar Styling
+========================================================================== */
 
 .navbar {
-    display: flex;
-    justify-content: space-between; /* This creates space between elements */
-    align-items: center;
-    background-color: var(--clr-n-700);
-    padding: 1rem var(--p-normal);
-    border-bottom: 2px solid var(--clr-a-300);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--clr-n-700);
+	padding: 1rem var(--p-normal);
+	border-bottom: 2px solid var(--clr-a-300);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .navbar-brand {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0; /* Prevent logo from shrinking */
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
 }
 
 .navbar-logo {
@@ -437,12 +365,12 @@ section {
 }
 
 .navbar-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: auto; /* Push nav items to the right */
-    margin-right: 1rem; /* Add space between nav and search */
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: 1rem;
 }
 
 .nav-item {
@@ -483,258 +411,224 @@ section {
 	cursor: pointer;
 }
 
-/* Media query for responsive navbar */
 @media (max-width: 768px) {
-    .navbar {
-        justify-content: space-between; /* Ensure space between on mobile */
-    }
-    
-    .navbar-toggle {
+	.navbar {
+		justify-content: space-between;
+	}
+	.navbar-toggle {
 		display: block;
 	}
-
-    .navbar-nav {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background-color: var(--clr-n-700);
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease;
-        z-index: 99;
-        border-bottom: 2px solid var(--clr-a-300);
-        margin-left: 0; /* Reset margin on mobile */
-        margin-right: 0; /* Reset margin on mobile */
-    }
-
-	.navbar-toggle-checkbox:checked~.navbar-nav {
+	.navbar-nav {
+		position: fixed;
+		top: 70px;
+		left: 0;
+		right: 0;
+		background-color: var(--clr-n-700);
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 0;
+		transform: translateY(-100%);
+		transition: transform 0.3s ease;
+		z-index: 99;
+		border-bottom: 2px solid var(--clr-a-300);
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navbar-toggle-checkbox:checked ~ .navbar-nav {
 		transform: translateY(0);
 	}
-
 	.nav-item {
 		margin: 0.5rem 0;
 	}
-    
-    .navbar-search {
-        margin-right: 50px; /* Make room for hamburger menu */
-    }
+	.navbar-search {
+		margin-right: 50px;
+	}
 }
 
-
 /* ==========================================================================
-    Navbar Search Bar Styling
-   ========================================================================== */
+Navbar Search Bar Styling
+========================================================================== */
 
 .navbar-search {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0; /* Prevent search from shrinking */
-    position: relative;
-    border-radius: var(--br-min);
-    background-color: var(--clr-n-600);
-    border: 1px solid var(--clr-n-500);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    max-width: 250px;
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	position: relative;
+	border-radius: var(--br-min);
+	background-color: var(--clr-n-600);
+	border: 1px solid var(--clr-n-500);
+	overflow: hidden;
+	transition: all 0.3s ease;
+	max-width: 250px;
 }
 
 .navbar-search:focus-within {
-    border-color: var(--clr-a-100);
-    background-color: var(--clr-n-700);
+	border-color: var(--clr-a-100);
+	background-color: var(--clr-n-700);
 }
 
 .navbar-search-input {
-    padding: 0.4rem 0.6rem;
-    border: none;
-    background-color: transparent;
-    color: var(--clr-n-100);
-    font-size: var(--fs-small);
-    outline: none;
-    width: 100%;
+	padding: 0.4rem 0.6rem;
+	border: none;
+	background-color: transparent;
+	color: var(--clr-n-100);
+	font-size: var(--fs-small);
+	outline: none;
+	width: 100%;
 }
 
 .navbar-search-input::placeholder {
-    color: var(--clr-n-300);
+	color: var(--clr-n-300);
 }
 
 .navbar-search-button {
-    background-color: transparent;
-    border: none;
-    color: var(--clr-n-100);
-    padding: 0.4rem 0.6rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
+	background-color: transparent;
+	border: none;
+	color: var(--clr-n-100);
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	transition: color 0.3s ease;
 }
 
 .navbar-search-button:hover {
-    color: var(--clr-a-100);
+	color: var(--clr-a-100);
 }
 
 .search-icon {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 
-/* For very small screens, hide search until clicked */
 @media (max-width: 480px) {
-    .navbar-search {
-        max-width: 40px;
-        overflow: hidden;
-        transition: max-width 0.3s ease;
-    }
-    
-    .navbar-search:focus-within {
-        max-width: 150px;
-    }
-    
-    .navbar-search-input {
-        width: 0;
-        padding: 0.4rem 0;
-        transition: width 0.3s ease, padding 0.3s ease;
-    }
-    
-    .navbar-search:focus-within .navbar-search-input {
-        width: 100px;
-        padding: 0.4rem 0.6rem;
-    }
+	.navbar-search {
+		max-width: 40px;
+		overflow: hidden;
+		transition: max-width 0.3s ease;
+	}
+	.navbar-search:focus-within {
+		max-width: 150px;
+	}
+	.navbar-search-input {
+		width: 0;
+		padding: 0.4rem 0;
+		transition: width 0.3s ease, padding 0.3s ease;
+	}
+	.navbar-search:focus-within .navbar-search-input {
+		width: 100px;
+		padding: 0.4rem 0.6rem;
+	}
 }
-
 
 /* ==========================================================================
-    About Page Heading Styling
-   ========================================================================== */
-/* 
+About Page Heading Styling 
+========================================================================== */
+/*
 .about-heading {
     position: relative;
     display: inline-block;
     padding: var(--p-normal) var(--p-box);
-    margin: var(--m-space) auto;
-    text-align: center;
-    width: auto;
-    max-width: 80%;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-section);
+    color: var(--clr-p-200);
 }
-
-.about-heading::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(20, 20, 20, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); 
-    border-radius: var(--br-normal);
-    z-index: -1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.heading-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: var(--m-space);
-} */
-
+*/
 
 /* ==========================================================================
-    Fluent Design and Modern Acrylic
+   Acrylic Container
    ========================================================================== */
 
 .acrylic-container {
-		flex: 1;
-    position: relative;
-		max-width: 1800px;
-		height: 800px;
-    width: 100%;
-    margin: 40px auto auto; /* Top margin accounts for navbar */
-    padding: var(--p-max);
-    border-radius: var(--br-normal);
-    overflow: hidden;
-    z-index: 1;
+  flex: 1;
+  position: relative;
+  max-width: 1800px;
+  width: calc(100% - 2rem);
+  margin: 40px 1rem var(--m-normal);
+  padding: var(--p-max);
+  border-radius: var(--br-normal);
+  overflow: hidden;
+  z-index: 1;
 }
 
 .acrylic-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(20, 20, 20, 0.6);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); /* For Safari support */
-    z-index: -1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border-radius: var(--br-normal);
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: var(--br-normal);
 }
 
-/* Adjust header and section spacing within acrylic container */
 .acrylic-container header {
-    background-color: transparent;
-    margin-bottom: var(--m-normal);
-    padding: 0;
+  background-color: transparent;
+  margin-bottom: var(--m-normal);
+  padding: 0;
 }
 
 .acrylic-container section {
-    position: relative;
-    margin-bottom: var(--m-normal);
-    padding: var(--p-normal);
-    border-radius: var(--br-min);
-    border-left: 3px solid var(--clr-a-200);
-    background-color: rgba(255, 255, 255, 0.05);
+  position: relative;
+  margin-bottom: var(--m-normal);
+  padding: var(--p-normal);
+  border-radius: var(--br-min);
+  border-left: 3px solid var(--clr-a-200);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .acrylic-container .l2h {
-		border: none;
+  border: none;
 }
 
 .acrylic-container h1 {
-    margin-top: var(--m-min);
+  margin-top: var(--m-min);
 }
 
 .acrylic-container h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
-/* Responsive adjustments */
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  text-align: center;
+  padding: var(--p-space);
+  background-color: var(--clr-n-800);
+  color: var(--clr-n-50);
+  font-size: var(--fs-small);
+  border-top: 1px solid var(--clr-n-700);
+}
+
+.footer a {
+  color: var(--clr-a-100);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+    Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .acrylic-container {
+    padding: var(--p-space);
+    width: calc(100% - 2 * var(--m-normal));
+    margin: var(--m-normal);
+  }
+}
+
 @media (max-width: 768px) {
-    .acrylic-container {
-        width: 95%;
-        padding: var(--p-normal);
-    }
-    
-    .acrylic-container section {
-        padding: var(--p-min);
-    }
-}
-
-/* Footer styling */
-footer {
-    position: relative;
-    color: var(--txt-clr-light);
-    font-family: system-ui, 'Helvetica', sans-serif;
-    text-align: center;
+  .acrylic-container {
+    padding: var(--p-normal);
+    width: calc(100% - 2 * var(--p-normal));
+    margin: var(--m-normal) var(--p-normal);
+  }
+  .acrylic-container section {
     padding: var(--p-min);
-    margin-top: auto; /* Push to bottom of flex container */
-    font-size: var(--fs-medium);
-    font-weight: var(--fw-text);
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
+  }
 }
-/* Add padding to the bottom of the acrylic container to prevent content from being hidden by the footer*/
-.acrylic-container {
-    margin-bottom: var(--m-normal); /* Add space for the footer */
-    padding-bottom: var(--p-normal);
-}
-
-/* Add padding to the top of the body to ensure scrolling works correctly with fixed footer */
-body {
-    padding-top: 70px;
-}
-
