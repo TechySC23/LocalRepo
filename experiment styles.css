@@ -157,6 +157,129 @@
 	font-size: 18.24px;
 	font-family: "Consolas", monospace;
 }
+/* ==========================================================================
+    Navbar Styling
+   ========================================================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* This creates space between elements */
+    align-items: center;
+    background-color: var(--clr-n-700);
+    padding: 1rem var(--p-normal);
+    border-bottom: 2px solid var(--clr-a-300);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.navbar-logo {
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-head);
+	color: var(--clr-a-100);
+	text-decoration: none;
+	font-family: "Montserrat", Helvetica, Verdana, sans-serif;
+	margin-right: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Push nav items to the right */
+    margin-right: 1rem; /* Add space between nav and search */
+}
+
+.nav-item {
+	margin: 0 0.5rem;
+}
+
+.nav-link {
+	color: var(--clr-n-100);
+	text-decoration: none;
+	font-size: var(--fs-nav);
+	font-weight: var(--fw-list);
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.3rem;
+	transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+	background-color: var(--clr-hover-300);
+	color: var(--clr-n-50);
+}
+
+.nav-link.active {
+	background-color: var(--clr-a-250);
+	color: var(--clr-n-50);
+}
+
+/* CSS-only mobile menu toggle */
+.navbar-toggle-checkbox {
+	display: none;
+}
+
+.navbar-toggle {
+	display: none;
+	background: none;
+	border: none;
+	color: var(--clr-n-100);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* Media query for responsive navbar */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between; /* Ensure space between on mobile */
+    }
+    
+    .navbar-toggle {
+		display: block;
+	}
+
+    .navbar-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--clr-n-700);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        z-index: 99;
+        border-bottom: 2px solid var(--clr-a-300);
+        margin-left: 0; /* Reset margin on mobile */
+        margin-right: 0; /* Reset margin on mobile */
+    }
+
+	.navbar-toggle-checkbox:checked~.navbar-nav {
+		transform: translateY(0);
+	}
+
+	.nav-item {
+		margin: 0.5rem 0;
+	}
+    
+    .navbar-search {
+        margin-right: 50px; /* Make room for hamburger menu */
+    }
+}
+
+/* ==========================================================================	
 
 /* Fake Progress Bars! */
 
@@ -218,4 +341,102 @@ ol {
 	padding: var(--p-min) var(--p-space);
 	font-size: var(--fs-list);
 	font-weight: var(--fw-list);
+}
+
+
+/* ========================================================================== 
+	Fluent design with acrylic styling
+*/
+
+.acrylic-container {
+		flex: 1;
+    position: relative;
+		max-width: 1800px;
+		height: 800px;
+    width: 100%;
+    margin: 40px auto auto; /* Top margin accounts for navbar */
+    padding: var(--p-max);
+    border-radius: var(--br-normal);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.acrylic-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: var(--br-normal);
+}
+
+/* Adjust header and section spacing within acrylic container */
+.acrylic-container header {
+    background-color: transparent;
+    margin-bottom: var(--m-normal);
+    padding: 0;
+}
+
+.acrylic-container section {
+    position: relative;
+    margin-bottom: var(--m-normal);
+    padding: var(--p-normal);
+    border-radius: var(--br-min);
+    border-left: 3px solid var(--clr-a-200);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.acrylic-container .l2h {
+		border: none;
+}
+
+.acrylic-container h1 {
+    margin-top: var(--m-min);
+}
+
+.acrylic-container h2 {
+    margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .acrylic-container {
+        width: 95%;
+        padding: var(--p-normal);
+    }
+    
+    .acrylic-container section {
+        padding: var(--p-min);
+    }
+}
+
+/* Footer styling */
+footer {
+    position: relative;
+    color: var(--txt-clr-light);
+    font-family: system-ui, 'Helvetica', sans-serif;
+    text-align: center;
+    padding: var(--p-min);
+    margin-top: auto; /* Push to bottom of flex container */
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-text);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+/* Add padding to the bottom of the acrylic container to prevent content from being hidden by the footer*/
+.acrylic-container {
+    margin-bottom: var(--m-normal); /* Add space for the footer */
+    padding-bottom: var(--p-normal);
+}
+
+/* Add padding to the top of the body to ensure scrolling works correctly with fixed footer */
+body {
+    padding-top: 70px;
 }
